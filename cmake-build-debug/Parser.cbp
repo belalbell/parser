@@ -8,92 +8,94 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/sami/CLionProjects/Parser/cmake-build-debug"/>
+				<Option working_dir="E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/sami/CLionProjects/Parser/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/sami/CLionProjects/Parser/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Parser">
-				<Option output="/home/sami/CLionProjects/Parser/cmake-build-debug/Parser" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/sami/CLionProjects/Parser/cmake-build-debug"/>
+				<Option output="E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Parser.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
-					<Add directory="/usr/include/c++/8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Parser"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Parser"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Parser/fast">
-				<Option output="/home/sami/CLionProjects/Parser/cmake-build-debug/Parser" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/sami/CLionProjects/Parser/cmake-build-debug"/>
+				<Option output="E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Parser.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/8"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
-					<Add directory="/usr/include/c++/8/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Parser/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/sami/CLionProjects/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Parser/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/sami/CLionProjects/Parser/InputHandler.cpp">
+		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.cpp">
 			<Option target="Parser"/>
 		</Unit>
-		<Unit filename="/home/sami/CLionProjects/Parser/InputHandler.h">
+		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h">
 			<Option target="Parser"/>
 		</Unit>
-		<Unit filename="/home/sami/CLionProjects/Parser/main.cpp">
+		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.cpp">
 			<Option target="Parser"/>
 		</Unit>
-		<Unit filename="/home/sami/CLionProjects/Parser/CMakeLists.txt">
+		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h">
+			<Option target="Parser"/>
+		</Unit>
+		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/main.cpp">
+			<Option target="Parser"/>
+		</Unit>
+		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

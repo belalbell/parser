@@ -3,4 +3,4 @@ project(Parser)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Parser main.cpp InputHandler.cpp InputHandler.h)
+add_executable(Parser main.cpp InputHandler.cpp InputHandler.h ImmediateLeftRecursion.cpp ImmediateLeftRecursion.h)

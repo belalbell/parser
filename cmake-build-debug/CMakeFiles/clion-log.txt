@@ -1,4 +1,4 @@
-/home/sami/Desktop/clion-2018.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/sami/CLionProjects/Parser
+"E:\clion\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "E:\3rd year 2nd semester\compiler\phaseTwo\parser"
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/sami/CLionProjects/Parser/cmake-build-debug
+-- Build files have been written to: E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug

@@ -1,8 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Parser.dir/main.cpp.o"
-  "CMakeFiles/Parser.dir/InputHandler.cpp.o"
+  "CMakeFiles/Parser.dir/main.cpp.obj"
+  "CMakeFiles/Parser.dir/InputHandler.cpp.obj"
+  "CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.obj"
   "Parser.pdb"
-  "Parser"
+  "Parser.exe"
+  "Parser.exe.manifest"
+  "libParser.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
