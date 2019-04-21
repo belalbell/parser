@@ -82,6 +82,39 @@ void InputHandler::rightTokensSeparator(string rightHandSideToken){
     rightToTokens[rightHandSideToken] = RHStokens ;
 }
 
+
+void InputHandler::setLHS(string leftHandSide){
+    LHSinputs.insert(LHSinputs.end(),leftHandSide);
+}
+vector<string> InputHandler::getLHS(){
+    return LHSinputs;
+}
+void InputHandler::deleteFromLHS(string leftHandSide){
+    LHSinputs.erase(std::remove(LHSinputs.begin(), LHSinputs.end(), leftHandSide), LHSinputs.end());
+}
+
+
+void InputHandler::setLeftToRight(string leftHandSide ,vector<string> rightHandSide){
+    leftToRight[leftHandSide] = rightHandSide ;
+}
+map<string,vector<string>> InputHandler::getLeftToRight(){
+    return leftToRight;
+}
+void InputHandler::deleteFromLeftToRight(string leftHandSide){
+    leftToRight.erase(leftHandSide);
+}
+
+
+void InputHandler::setRightToTokens(string RightHandSide ,vector<string> Tokens){
+    rightToTokens[RightHandSide] = Tokens ;
+}
+map<string,vector<string>> InputHandler::getRightToTokens(){
+    return rightToTokens;
+}
+void InputHandler::deleteFromRightToTokens(string RightHandSide){
+    rightToTokens.erase(RightHandSide);
+}
+
 void InputHandler::print(){
     //std::cout << tmp << std::endl;
     /*for(auto elem : rightToTokens)
@@ -118,4 +151,16 @@ void InputHandler::print(){
         cout << "\n";
     }
 */
+}
+
+vector<string> InputHandler::getLHSinputs() {
+    return LHSinputs;
+}
+
+vector<string> InputHandler::getLeftToRight(string lhs) {
+    return leftToRight[lhs];
+}
+
+vector<string> InputHandler::getRightToTokens(string rhs) {
+    return rightToTokens[rhs];
 }

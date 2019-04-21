@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sami/CLionProjects/Parser/InputHandler.cpp" "/home/sami/CLionProjects/Parser/cmake-build-debug/CMakeFiles/Parser.dir/InputHandler.cpp.o"
-  "/home/sami/CLionProjects/Parser/main.cpp" "/home/sami/CLionProjects/Parser/cmake-build-debug/CMakeFiles/Parser.dir/main.cpp.o"
+  "/home/belal/Downloads/Parser/InputHandler.cpp" "/home/belal/Downloads/Parser/cmake-build-debug/CMakeFiles/Parser.dir/InputHandler.cpp.o"
+  "/home/belal/Downloads/Parser/main.cpp" "/home/belal/Downloads/Parser/cmake-build-debug/CMakeFiles/Parser.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

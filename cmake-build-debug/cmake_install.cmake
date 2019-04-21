@@ -1,4 +1,4 @@
-# Install script for directory: /home/sami/CLionProjects/Parser
+# Install script for directory: /home/belal/Downloads/Parser
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sami/CLionProjects/Parser/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/belal/Downloads/Parser/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
