@@ -176,6 +176,33 @@ InputHandler.cpp.s:
 	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/InputHandler.cpp.s
 .PHONY : InputHandler.cpp.s
 
+NotImmediateLeftRecursion.obj: NotImmediateLeftRecursion.cpp.obj
+
+.PHONY : NotImmediateLeftRecursion.obj
+
+# target to build an object file
+NotImmediateLeftRecursion.cpp.obj:
+	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.obj
+.PHONY : NotImmediateLeftRecursion.cpp.obj
+
+NotImmediateLeftRecursion.i: NotImmediateLeftRecursion.cpp.i
+
+.PHONY : NotImmediateLeftRecursion.i
+
+# target to preprocess a source file
+NotImmediateLeftRecursion.cpp.i:
+	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.i
+.PHONY : NotImmediateLeftRecursion.cpp.i
+
+NotImmediateLeftRecursion.s: NotImmediateLeftRecursion.cpp.s
+
+.PHONY : NotImmediateLeftRecursion.s
+
+# target to generate assembly for a file
+NotImmediateLeftRecursion.cpp.s:
+	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.s
+.PHONY : NotImmediateLeftRecursion.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -245,6 +272,9 @@ help:
 	@echo ... InputHandler.obj
 	@echo ... InputHandler.i
 	@echo ... InputHandler.s
+	@echo ... NotImmediateLeftRecursion.obj
+	@echo ... NotImmediateLeftRecursion.i
+	@echo ... NotImmediateLeftRecursion.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
