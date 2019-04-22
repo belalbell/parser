@@ -203,6 +203,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+parsing.obj: parsing.cpp.obj
+
+.PHONY : parsing.obj
+
+# target to build an object file
+parsing.cpp.obj:
+	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/parsing.cpp.obj
+.PHONY : parsing.cpp.obj
+
+parsing.i: parsing.cpp.i
+
+.PHONY : parsing.i
+
+# target to preprocess a source file
+parsing.cpp.i:
+	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/parsing.cpp.i
+.PHONY : parsing.cpp.i
+
+parsing.s: parsing.cpp.s
+
+.PHONY : parsing.s
+
+# target to generate assembly for a file
+parsing.cpp.s:
+	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/parsing.cpp.s
+.PHONY : parsing.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -221,6 +248,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... parsing.obj
+	@echo ... parsing.i
+	@echo ... parsing.s
 .PHONY : help
 
 

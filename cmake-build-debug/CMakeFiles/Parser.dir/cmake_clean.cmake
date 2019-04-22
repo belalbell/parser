@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Parser.dir/main.cpp.obj"
   "CMakeFiles/Parser.dir/InputHandler.cpp.obj"
+  "CMakeFiles/Parser.dir/parsing.cpp.obj"
   "CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.obj"
   "Parser.pdb"
   "Parser.exe"

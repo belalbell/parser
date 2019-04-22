@@ -7,11 +7,16 @@
 
 #include <string>
 #include <vector>
+#include "InputHandler.h"
 
 using namespace std;
 
 class ImmediateLeftRecursion {
+private:
+    InputHandler* inputHandler = InputHandler::getInstance();
 public:
+    static ImmediateLeftRecursion* getInstance();
+
     void eliminateImmediateLeftRecursion(string symbol, vector <string> splittedGrammar);
 
     bool isImmediateLeftRecursion(string symbol, vector <string> splittedGrammar);

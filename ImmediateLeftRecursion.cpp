@@ -4,6 +4,15 @@
 
 #include "ImmediateLeftRecursion.h"
 
+static ImmediateLeftRecursion *insatnce = nullptr;
+
+ImmediateLeftRecursion *ImmediateLeftRecursion::getInstance() {
+    if (insatnce == nullptr) {
+        insatnce = new ImmediateLeftRecursion();
+    }
+    return insatnce;
+}
+
 void ImmediateLeftRecursion::eliminateImmediateLeftRecursion(string symbol, vector<string> splittedGrammar) {
     vector<string> firstGrammar, secondGrammar;
     string temp = "", symbolDash = symbol + "'";

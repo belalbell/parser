@@ -95,6 +95,12 @@
 		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/main.cpp">
 			<Option target="Parser"/>
 		</Unit>
+		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/parsing.cpp">
+			<Option target="Parser"/>
+		</Unit>
+		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/parsing.h">
+			<Option target="Parser"/>
+		</Unit>
 		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -21,6 +21,7 @@ private:
     vector<string> RHStokens;
     map<string,vector<string>> leftToRight;
     map<string,vector<string>> rightToTokens;
+    vector<string> Terminals;
 public:
 
     static InputHandler* getInstance();
@@ -30,6 +31,20 @@ public:
     void rightInputsSeparator(string rightHandSide);
     void rightTokensSeparator(string rightHandSideToken);
     void print();
+    vector<string> getLHSinputs();
+    vector<string> getLeftToRight(string lhs);
+    vector<string> getRightToTokens(string rhs);
+    void setLHS(string leftHandSide);
+    vector<string> getLHS();
+    void deleteFromLHS(string leftHandSide);
+
+    void setLeftToRight(string leftHandSide ,vector<string> rightHandSide);
+    map<string,vector<string>> getLeftToRight();
+    void deleteFromLeftToRight(string leftHandSide);
+
+    void setRightToTokens(string RightHandSide ,vector<string> Tokens);
+    map<string,vector<string>> getRightToTokens();
+    void deleteFromRightToTokens(string RightHandSide);
 };
 
 
