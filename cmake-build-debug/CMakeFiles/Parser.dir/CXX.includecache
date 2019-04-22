@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.cpp
-ImmediateLeftRecursion.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
-
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
-string
--
-vector
--
-InputHandler.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
-
 E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.cpp
 InputHandler.h
 E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
@@ -42,59 +30,5 @@ sstream
 map
 -
 vector
--
-
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.cpp
-LeftFactoring.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.h
-
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.h
-string
--
-vector
--
-InputHandler.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
-
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.cpp
-NotImmediateLeftRecursion.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.h
-
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.h
-string
--
-vector
--
-InputHandler.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
-ImmediateLeftRecursion.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
-
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/main.cpp
-iostream
--
-InputHandler.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
-InputHandler.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
-fstream
--
-iostream
--
-sstream
--
-bits/stdc++.h
--
-map
--
-
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/parsing.cpp
-parsing.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/parsing.h
-
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/parsing.h
-string
--
-map
 -
 

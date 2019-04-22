@@ -5,6 +5,7 @@ CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.obj
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.cpp
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
+ E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
 CMakeFiles/Parser.dir/InputHandler.cpp.obj
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.cpp
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
@@ -12,11 +13,17 @@ CMakeFiles/Parser.dir/LeftFactoring.cpp.obj
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.cpp
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.h
+ E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
 CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.obj
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.cpp
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.h
+ E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
+CMakeFiles/Parser.dir/SymbolsNames.cpp.obj
+ E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
+ E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.cpp
+ E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
 CMakeFiles/Parser.dir/main.cpp.obj
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
  E:/3rd year 2nd semester/compiler/phaseTwo/parser/main.cpp
