@@ -73,7 +73,7 @@ void LeftFactoring::perfomLeftFactoring() {
     vector<string> currentGrammar, comparedGrammar;
     string currentStrToCompare;
     int tokenLettersIndex;
-    for (int grammarIndex = 0; grammarIndex < inputHandler->getRHSSize(); ++grammarIndex) {
+    for (int grammarIndex = 0; grammarIndex <  inputHandler->getLeftToRight().size(); ++grammarIndex) {
         currentGrammar = inputHandler->getRHSByIndex(grammarIndex);
         for (int nodeIndex = 0; nodeIndex < currentGrammar.size(); ++nodeIndex) {
             currentStrToCompare = currentGrammar[nodeIndex];

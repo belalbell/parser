@@ -16,7 +16,7 @@ SymbolsNames *SymbolsNames::getInstance() {
 
 string SymbolsNames::getASymbolName(string originalSymbol) {
     string newSymbol = originalSymbol + "'";
-    for (int lhsIndex = 0; lhsIndex < inputHandler->getLHSSize(); ++lhsIndex) {
+    for (int lhsIndex = 0; lhsIndex < inputHandler->getLHS().size(); ++lhsIndex) {
         if (newSymbol == inputHandler->getLHSByIndex(lhsIndex)) {
             newSymbol += "'";
         }
