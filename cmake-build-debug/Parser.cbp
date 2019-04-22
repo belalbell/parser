@@ -93,6 +93,12 @@
 		<Unit filename="/home/belal/Downloads/Parser/main.cpp">
 			<Option target="Parser"/>
 		</Unit>
+		<Unit filename="/home/belal/Downloads/Parser/parsing.cpp">
+			<Option target="Parser"/>
+		</Unit>
+		<Unit filename="/home/belal/Downloads/Parser/parsing.h">
+			<Option target="Parser"/>
+		</Unit>
 		<Unit filename="/home/belal/Downloads/Parser/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
