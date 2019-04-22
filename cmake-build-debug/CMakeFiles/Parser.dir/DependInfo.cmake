@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.cpp" "E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/CMakeFiles/Parser.dir/InputHandler.cpp.obj"
   "E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.cpp" "E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/CMakeFiles/Parser.dir/LeftFactoring.cpp.obj"
   "E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.cpp" "E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.obj"
+  "E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.cpp" "E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/CMakeFiles/Parser.dir/SymbolsNames.cpp.obj"
   "E:/3rd year 2nd semester/compiler/phaseTwo/parser/main.cpp" "E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/CMakeFiles/Parser.dir/main.cpp.obj"
   "E:/3rd year 2nd semester/compiler/phaseTwo/parser/parsing.cpp" "E:/3rd year 2nd semester/compiler/phaseTwo/parser/cmake-build-debug/CMakeFiles/Parser.dir/parsing.cpp.obj"
   )

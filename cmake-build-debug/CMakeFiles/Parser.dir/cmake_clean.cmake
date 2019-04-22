@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.obj"
   "CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.obj"
   "CMakeFiles/Parser.dir/LeftFactoring.cpp.obj"
+  "CMakeFiles/Parser.dir/SymbolsNames.cpp.obj"
   "Parser.pdb"
   "Parser.exe"
   "Parser.exe.manifest"

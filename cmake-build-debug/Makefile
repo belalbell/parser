@@ -230,6 +230,33 @@ NotImmediateLeftRecursion.cpp.s:
 	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.s
 .PHONY : NotImmediateLeftRecursion.cpp.s
 
+SymbolsNames.obj: SymbolsNames.cpp.obj
+
+.PHONY : SymbolsNames.obj
+
+# target to build an object file
+SymbolsNames.cpp.obj:
+	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/SymbolsNames.cpp.obj
+.PHONY : SymbolsNames.cpp.obj
+
+SymbolsNames.i: SymbolsNames.cpp.i
+
+.PHONY : SymbolsNames.i
+
+# target to preprocess a source file
+SymbolsNames.cpp.i:
+	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/SymbolsNames.cpp.i
+.PHONY : SymbolsNames.cpp.i
+
+SymbolsNames.s: SymbolsNames.cpp.s
+
+.PHONY : SymbolsNames.s
+
+# target to generate assembly for a file
+SymbolsNames.cpp.s:
+	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/SymbolsNames.cpp.s
+.PHONY : SymbolsNames.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -305,6 +332,9 @@ help:
 	@echo ... NotImmediateLeftRecursion.obj
 	@echo ... NotImmediateLeftRecursion.i
 	@echo ... NotImmediateLeftRecursion.s
+	@echo ... SymbolsNames.obj
+	@echo ... SymbolsNames.i
+	@echo ... SymbolsNames.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
