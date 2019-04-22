@@ -6,7 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/mazen/CLionProjects/parser/InputHandler.h
+/home/belal/Downloads/Parser/InputHandler.cpp
+InputHandler.h
+/home/belal/Downloads/Parser/InputHandler.h
+fstream
+-
+iostream
+-
+sstream
+-
+bits/stdc++.h
+-
+map
+-
+
+/home/belal/Downloads/Parser/InputHandler.h
 fstream
 -
 iostream
@@ -18,15 +32,45 @@ map
 vector
 -
 
-/home/mazen/CLionProjects/parser/Save_Load.cpp
+/home/belal/Downloads/Parser/Save_Load.cpp
 Save_Load.h
-/home/mazen/CLionProjects/parser/Save_Load.h
+/home/belal/Downloads/Parser/Save_Load.h
 InputHandler.h
-/home/mazen/CLionProjects/parser/InputHandler.h
+/home/belal/Downloads/Parser/InputHandler.h
 bits/stdc++.h
 -
 
-/home/mazen/CLionProjects/parser/Save_Load.h
+/home/belal/Downloads/Parser/Save_Load.h
 bits/stdc++.h
+-
+
+/home/belal/Downloads/Parser/main.cpp
+iostream
+-
+InputHandler.h
+/home/belal/Downloads/Parser/InputHandler.h
+InputHandler.h
+/home/belal/Downloads/Parser/InputHandler.h
+Save_Load.h
+/home/belal/Downloads/Parser/Save_Load.h
+fstream
+-
+iostream
+-
+sstream
+-
+bits/stdc++.h
+-
+map
+-
+
+/home/belal/Downloads/Parser/parsing.cpp
+parsing.h
+/home/belal/Downloads/Parser/parsing.h
+
+/home/belal/Downloads/Parser/parsing.h
+string
+-
+map
 -
 

@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/mazen/CLionProjects/parser/cmake-build-debug"/>
+				<Option working_dir="/home/belal/Downloads/Parser/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/mazen/CLionProjects/parser/cmake-build-debug"/>
+				<Option working_dir="/home/belal/Downloads/Parser/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Parser">
-				<Option output="/home/mazen/CLionProjects/parser/cmake-build-debug/Parser" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/mazen/CLionProjects/parser/cmake-build-debug"/>
+				<Option output="/home/belal/Downloads/Parser/cmake-build-debug/Parser" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/belal/Downloads/Parser/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Parser"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Parser"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Parser/fast">
-				<Option output="/home/mazen/CLionProjects/parser/cmake-build-debug/Parser" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/mazen/CLionProjects/parser/cmake-build-debug"/>
+				<Option output="/home/belal/Downloads/Parser/cmake-build-debug/Parser" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/belal/Downloads/Parser/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,45 +67,45 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Parser/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Parser/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/mazen/CLionProjects/parser/cmake-build-debug"/>
+				<Option working_dir="/home/belal/Downloads/Parser/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mazen/CLionProjects/parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/belal/Downloads/Parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/mazen/CLionProjects/parser/InputHandler.cpp">
+		<Unit filename="/home/belal/Downloads/Parser/InputHandler.cpp">
 			<Option target="Parser"/>
 		</Unit>
-		<Unit filename="/home/mazen/CLionProjects/parser/InputHandler.h">
+		<Unit filename="/home/belal/Downloads/Parser/InputHandler.h">
 			<Option target="Parser"/>
 		</Unit>
-		<Unit filename="/home/mazen/CLionProjects/parser/Save_Load.cpp">
+		<Unit filename="/home/belal/Downloads/Parser/Save_Load.cpp">
 			<Option target="Parser"/>
 		</Unit>
-		<Unit filename="/home/mazen/CLionProjects/parser/Save_Load.h">
+		<Unit filename="/home/belal/Downloads/Parser/Save_Load.h">
 			<Option target="Parser"/>
 		</Unit>
-		<Unit filename="/home/mazen/CLionProjects/parser/main.cpp">
+		<Unit filename="/home/belal/Downloads/Parser/main.cpp">
 			<Option target="Parser"/>
 		</Unit>
-		<Unit filename="/home/mazen/CLionProjects/parser/parsing.cpp">
+		<Unit filename="/home/belal/Downloads/Parser/parsing.cpp">
 			<Option target="Parser"/>
 		</Unit>
-		<Unit filename="/home/mazen/CLionProjects/parser/parsing.h">
+		<Unit filename="/home/belal/Downloads/Parser/parsing.h">
 			<Option target="Parser"/>
 		</Unit>
-		<Unit filename="/home/mazen/CLionProjects/parser/CMakeLists.txt">
+		<Unit filename="/home/belal/Downloads/Parser/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
