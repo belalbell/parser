@@ -19,11 +19,11 @@ private:
 public :
     static NotImmediateLeftRecursion *getInstance();
 
-    void elemenateNotImmediateLeftRecursion();
+    void eliminateNotImmediateLeftRecursion();
 
-    vector<string> subistitute(string firstSymbol, vector<string> firstGrammar, vector<string> secondGrammar);
+    vector<string> substitute(string firstSymbol, vector<string> firstGrammar, vector<string> secondGrammar);
 
-    int findSymbolExistanceIndex(string symbol, vector<string> grammar);
+    int findSymbolExistenceIndex(string symbol, vector<string> grammar);
 
 };
 
