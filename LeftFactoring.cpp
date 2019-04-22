@@ -19,7 +19,13 @@ vector<string> LeftFactoring::createLeftFactoredGrammar(vector<string> comparedG
 vector<string> LeftFactoring::eraseNonMatchNodes(string originalStr, vector<string> currentGrammar,
                                                  int startComparedIndex) {}
 
-vector<string> LeftFactoring::findGrammarToCompare(int startIndex, vector<string> currentGrammar) {}
+vector<string> LeftFactoring::findGrammarToCompare(int startIndex, vector<string> currentGrammar) {
+    vector<string> newGrammar;
+    for (int nodeIndex = startIndex; nodeIndex < currentGrammar.size(); ++nodeIndex) {
+        newGrammar.push_back(currentGrammar[nodeIndex]);
+    }
+    return newGrammar;
+}
 
 void LeftFactoring::perfomLeftFactoring() {
     vector<string> currentGrammar, comparedGrammar;
