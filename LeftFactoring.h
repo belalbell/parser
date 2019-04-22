@@ -24,7 +24,7 @@ public:
     vector<string> createLeftFactoredGrammar(vector<string> comparedGrammar, int letterTokenIndex, string symbol,
                                              vector<string> currentGrammar);
 
-    vector<string> eraseNonMatchNodes(string originalStr, vector<string> currentGrammar, int startComparedIndex);
+    vector<string> eraseNonMatchedNodes(string originalStr, vector<string> currentGrammar, int startComparedIndex);
 };
 
 

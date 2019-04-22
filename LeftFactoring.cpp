@@ -37,8 +37,29 @@ vector<string> LeftFactoring::createLeftFactoredGrammar(vector<string> comparedG
     return originalGrammar;
 }
 
-vector<string> LeftFactoring::eraseNonMatchNodes(string originalStr, vector<string> currentGrammar,
-                                                 int startComparedIndex) {}
+vector<string> LeftFactoring::eraseNonMatchedNodes(string originalStr, vector<string> currentGrammar,
+                                                   int startComparedIndex) {
+    vector<string> grammarTemp = findGrammarToCompare(startComparedIndex, currentGrammar);
+    if (grammarTemp.size() != 0) {
+        for (int letterIndex = 0; letterIndex < originalStr.size(); ++letterIndex) {
+            for (int nodeIndex = 0; nodeIndex < grammarTemp.size(); ++nodeIndex) {
+                if (letterIndex == 0) {
+                    if (originalStr[0] != grammarTemp[nodeIndex].at(0)) {
+                        grammarTemp.erase(grammarTemp.begin()+nodeIndex,grammarTemp.begin()+nodeIndex+1);
+                    }
+                } else {
+                    if (originalStr[letterIndex] != grammarTemp[nodeIndex].at(letterIndex)) {
+                        grammarTemp.push_back(originalStr);
+                        grammarTemp.push_back(to_string(letterIndex--));
+                        return grammarTemp;
+                    }
+                }
+
+            }
+        }
+    }
+    return grammarTemp;
+}
 
 vector<string> LeftFactoring::findGrammarToCompare(int startIndex, vector<string> currentGrammar) {
     vector<string> newGrammar;
@@ -52,20 +73,20 @@ void LeftFactoring::perfomLeftFactoring() {
     vector<string> currentGrammar, comparedGrammar;
     string currentStrToCompare;
     int tokenLettersIndex;
-    for (int grammarIndex = 0; grammarIndex < inputHandler.getRHSSize(); ++grammarIndex) {
-        currentGrammar = inputHandler.getRHSByIndex(grammarIndex);
+    for (int grammarIndex = 0; grammarIndex < inputHandler->getRHSSize(); ++grammarIndex) {
+        currentGrammar = inputHandler->getRHSByIndex(grammarIndex);
         for (int nodeIndex = 0; nodeIndex < currentGrammar.size(); ++nodeIndex) {
             currentStrToCompare = currentGrammar[nodeIndex];
-            comparedGrammar = eraseNonMatchNodes(currentStrToCompare, currentGrammar, nodeIndex + 1);
+            comparedGrammar = eraseNonMatchedNodes(currentStrToCompare, currentGrammar, nodeIndex + 1);
             if (comparedGrammar.size() != 0) {
                 tokenLettersIndex = stoi(comparedGrammar[comparedGrammar.size() - 1]);
                 comparedGrammar.pop_back();
                 currentGrammar = createLeftFactoredGrammar(comparedGrammar, tokenLettersIndex,
-                                                           inputHandler.getLHSByIndex(grammarIndex), currentGrammar)
+                                                           inputHandler->getLHSByIndex(grammarIndex), currentGrammar)
             }
         }
         if (currentGrammar.size() != 0) {
-            inputHandler->setLeftToRight(inputHandler.getLHSByIndex(grammarIndex), currentGrammar);
+            inputHandler->setLeftToRight(inputHandler->getLHSByIndex(grammarIndex), currentGrammar);
         }
     }
 }
