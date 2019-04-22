@@ -21,6 +21,7 @@ private:
     vector<string> RHStokens;
     map<string,vector<string>> leftToRight;
     map<string,vector<string>> rightToTokens;
+    int rhsSize = 0;
     vector<string> Terminals;
 public:
 
@@ -45,6 +46,11 @@ public:
     void setRightToTokens(string RightHandSide ,vector<string> Tokens);
     map<string,vector<string>> getRightToTokens();
     void deleteFromRightToTokens(string RightHandSide);
+    int getLHSSize();
+    int getRHSSize();
+    string getLHSByIndex(int index);
+    vector<string> getRHSByIndex(int index);
+
 };
 
 

@@ -38,6 +38,7 @@ void InputHandler::readFile(string address) {
             }
         }
     }
+    rhsSize = LHSinputs.size();
 }
 void InputHandler::LeftRightInputs(string line){
     size_t pos = 0;
@@ -50,6 +51,7 @@ void InputHandler::LeftRightInputs(string line){
     RHS = line ;
     rightInputsSeparator(RHS);
     leftToRight[LHS] = RHSinputs ;
+
 
 }
 void InputHandler::rightInputsSeparator(string rightHandSide){
@@ -96,6 +98,7 @@ void InputHandler::deleteFromLHS(string leftHandSide){
 
 void InputHandler::setLeftToRight(string leftHandSide ,vector<string> rightHandSide){
     leftToRight[leftHandSide] = rightHandSide ;
+    rhsSize++;
 }
 map<string,vector<string>> InputHandler::getLeftToRight(){
     return leftToRight;
@@ -163,4 +166,18 @@ vector<string> InputHandler::getLeftToRight(string lhs) {
 
 vector<string> InputHandler::getRightToTokens(string rhs) {
     return rightToTokens[rhs];
+}
+
+int InputHandler::getLHSSize() {
+    return LHSinputs.size();
+}
+int InputHandler::getRHSSize() {
+    return rhsSize;
+}
+string InputHandler::getLHSByIndex(int index) {
+    return LHSinputs.at(index);
+}
+vector<string> InputHandler::getRHSByIndex(int index) {
+    string lhs = LHSinputs.at(index);
+    return leftToRight[lhs];
 }

@@ -82,7 +82,7 @@ void LeftFactoring::perfomLeftFactoring() {
                 tokenLettersIndex = stoi(comparedGrammar[comparedGrammar.size() - 1]);
                 comparedGrammar.pop_back();
                 currentGrammar = createLeftFactoredGrammar(comparedGrammar, tokenLettersIndex,
-                                                           inputHandler->getLHSByIndex(grammarIndex), currentGrammar)
+                                                           inputHandler->getLHSByIndex(grammarIndex), currentGrammar);
             }
         }
         if (currentGrammar.size() != 0) {

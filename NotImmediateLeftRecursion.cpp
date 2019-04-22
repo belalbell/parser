@@ -29,7 +29,7 @@ void NotImmediateLeftRecursion::eliminateNotImmediateLeftRecursion() {
                 if (secondSymbolExistenceIndex != -1) {
                     newFirstGrammmar = substitute(inputHandler->getLHSByIndex(rhsIndex),
                                                   inputHandler->getRHSByIndex(rhsIndex),
-                                                  inputHandler->getRHSByIndex(lhsIndex)));
+                                                  inputHandler->getRHSByIndex(lhsIndex));
                     immediateLeftRecursion->eliminateImmediateLeftRecursion(inputHandler->getLHSByIndex(lhsIndex),
                                                                             newFirstGrammmar);
                 }
