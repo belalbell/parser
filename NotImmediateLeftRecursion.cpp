@@ -18,9 +18,9 @@ void NotImmediateLeftRecursion::eliminateNotImmediateLeftRecursion() {
     int firstSymbolExistenceIndex, secondSymbolExistenceIndex;
     vector<string> newFirstGrammmar;
 
-    for (int lhsIndex = 0; lhsIndex < inputHandler->getLHSSize(); ++lhsIndex) {
+    for (int lhsIndex = 0; lhsIndex < inputHandler->getLHS().size(); ++lhsIndex) {
         currentSymbol = inputHandler->getLHS()[lhsIndex];
-        for (int rhsIndex = 0; rhsIndex < inputHandler->getRHSSize(); ++rhsIndex) {
+        for (int rhsIndex = 0; rhsIndex < inputHandler->getLeftToRight().size(); ++rhsIndex) {
             firstSymbolExistenceIndex = findSymbolExistenceIndex(inputHandler->getLHSByIndex(lhsIndex),
                                                                  inputHandler->getRHSByIndex(rhsIndex));
             if (firstSymbolExistenceIndex != -1) {
