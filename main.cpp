@@ -25,24 +25,17 @@ void print() {
 }
 
 void insert() {
-    inputHandler->setLHS("S");
     inputHandler->setLHS("A");
-    //inputHandler->setLHS("F");
 
     vector<string> rhsVector;
 
-    rhsVector.push_back("Aa");
-    rhsVector.push_back("b");
-    inputHandler->setLeftToRight("S", rhsVector);
+    rhsVector.push_back("abB");
+    rhsVector.push_back("aB");
+    rhsVector.push_back("cdg");
+    rhsVector.push_back("cdeB");
+    rhsVector.push_back("cdfB");
 
-    rhsVector[0] = "Ac";
-    rhsVector[1] = "Sd";
-    rhsVector.push_back("f");
     inputHandler->setLeftToRight("A", rhsVector);
-
-//    rhsVector[0] = "id";
-//    rhsVector[1] = "(E)";
-//    inputHandler->setLeftToRight("F", rhsVector);
 }
 
 

@@ -46,6 +46,7 @@ vector<string> LeftFactoring::eraseNonMatchedNodes(string originalStr, vector<st
                 if (letterIndex == 0) {
                     if (originalStr[0] != grammarTemp[nodeIndex].at(0)) {
                         grammarTemp.erase(grammarTemp.begin() + nodeIndex, grammarTemp.begin() + nodeIndex + 1);
+                        nodeIndex--;
                     }
                 } else {
                     if (originalStr[letterIndex] != grammarTemp[nodeIndex].at(letterIndex)) {

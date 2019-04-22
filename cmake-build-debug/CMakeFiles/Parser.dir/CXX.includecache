@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
-string
--
-vector
--
-InputHandler.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
-SymbolsNames.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
-
 E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
 fstream
 -
@@ -28,51 +18,21 @@ map
 vector
 -
 
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.h
-string
--
-vector
--
-InputHandler.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
-SymbolsNames.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
-
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.h
-string
--
-vector
--
-InputHandler.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
-ImmediateLeftRecursion.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
-
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
-InputHandler.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
-
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/main.cpp
-iostream
--
-InputHandler.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
-InputHandler.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
-ImmediateLeftRecursion.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
-NotImmediateLeftRecursion.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.cpp
 LeftFactoring.h
 E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.h
-fstream
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.h
+string
 -
-iostream
+vector
 -
-sstream
--
-bits/stdc++.h
--
-map
--
+InputHandler.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
+SymbolsNames.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
+InputHandler.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
 
