@@ -48,7 +48,7 @@ vector<string> NotImmediateLeftRecursion::substitute(string firstSymbol, vector<
             result = temp;
             result = firstGrammar[0] + result.substr(1);
             secondGrammar[secondGrammarNodeIndex] = result;
-            for (int firstGrammarNodeIndex = 0; firstGrammarNodeIndex < firstGrammar.size(); ++firstGrammarNodeIndex) {
+            for (int firstGrammarNodeIndex = 1; firstGrammarNodeIndex < firstGrammar.size(); ++firstGrammarNodeIndex) {
                 result = temp;
                 result = firstGrammar[firstGrammarNodeIndex] + result.substr(1);
                 secondGrammar.push_back(result);

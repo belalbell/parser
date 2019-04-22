@@ -25,23 +25,24 @@ void print() {
 }
 
 void insert() {
-    inputHandler->setLHS("E");
-    inputHandler->setLHS("T");
-    inputHandler->setLHS("F");
+    inputHandler->setLHS("S");
+    inputHandler->setLHS("A");
+    //inputHandler->setLHS("F");
 
     vector<string> rhsVector;
 
-    rhsVector.push_back("E+T");
-    rhsVector.push_back("T");
-    inputHandler->setLeftToRight("E", rhsVector);
+    rhsVector.push_back("Aa");
+    rhsVector.push_back("b");
+    inputHandler->setLeftToRight("S", rhsVector);
 
-    rhsVector[0] = "T*F";
-    rhsVector[1] = "F";
-    inputHandler->setLeftToRight("T", rhsVector);
+    rhsVector[0] = "Ac";
+    rhsVector[1] = "Sd";
+    rhsVector.push_back("f");
+    inputHandler->setLeftToRight("A", rhsVector);
 
-    rhsVector[0] = "id";
-    rhsVector[1] = "(E)";
-    inputHandler->setLeftToRight("F", rhsVector);
+//    rhsVector[0] = "id";
+//    rhsVector[1] = "(E)";
+//    inputHandler->setLeftToRight("F", rhsVector);
 }
 
 
@@ -51,8 +52,8 @@ int main() {
     //nonFiniteAutomata->print();
     insert();
     print();
-    cout<<"left size = "<<inputHandler->getLHSSize()<<endl;
-    cout<<"right size = "<<inputHandler->getRHSSize()<<endl;
+    cout << "left size = " << inputHandler->getLHSSize() << endl;
+    cout << "right size = " << inputHandler->getRHSSize() << endl;
     ImmediateLeftRecursion *immediateLeftRecursion = ImmediateLeftRecursion::getInstance();
     NotImmediateLeftRecursion *notImmediateLeftRecursion = NotImmediateLeftRecursion::getInstance();
     LeftFactoring *leftFactoring = LeftFactoring::getInstance();
@@ -67,10 +68,11 @@ int main() {
     }
 
     print();
-
+    cout << "done" << endl;
     notImmediateLeftRecursion->eliminateNotImmediateLeftRecursion();
     leftFactoring->perfomLeftFactoring();
 
     print();
+    cout << "done" << endl;
     return 0;
 }
