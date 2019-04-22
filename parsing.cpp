@@ -47,7 +47,7 @@ void parsing::first() {
         for (int i = 0; i < rhs.size(); ++i) {
             vector<string> *tmp = new vector<string>();
             string rhsElement = rhs.at(i);
-            //rhsElement.erase(remove_if(rhsElement.begin(), rhsElement.end(), ::isspace), rhsElement.end());
+            rhsElement.erase(remove_if(rhsElement.begin(), rhsElement.end(), ::isspace), rhsElement.end());
             vector<string> token = inputHandler->getRightToTokens(rhs.at(i));
             if (!(token.at(0)[0] >= 'A' && token.at(0)[0] <= 'Z')) {
                 tmp->push_back(token.at(0));
@@ -64,5 +64,8 @@ void parsing::first() {
     cout << "first lhs done ";
 }
 
+void parsing::follow() {
+
+}
 
 
