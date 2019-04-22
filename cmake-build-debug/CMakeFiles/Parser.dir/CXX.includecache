@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mazen/CLionProjects/parser/InputHandler.h
+fstream
+-
+iostream
+-
+sstream
+-
+map
+-
+vector
+-
+
+/home/mazen/CLionProjects/parser/Save_Load.cpp
+Save_Load.h
+/home/mazen/CLionProjects/parser/Save_Load.h
+InputHandler.h
+/home/mazen/CLionProjects/parser/InputHandler.h
+bits/stdc++.h
+-
+
+/home/mazen/CLionProjects/parser/Save_Load.h
+bits/stdc++.h
+-
+
