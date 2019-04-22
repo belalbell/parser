@@ -38,6 +38,8 @@ void InputHandler::readFile(string address) {
             }
         }
     }
+    tmp.erase(0 ,2);
+    LeftRightInputs(tmp);
     rhsSize = LHSinputs.size();
 }
 void InputHandler::LeftRightInputs(string line){
