@@ -24,7 +24,11 @@ CMakeFiles/Parser.dir/SymbolsNames.cpp.obj: ../InputHandler.h
 CMakeFiles/Parser.dir/SymbolsNames.cpp.obj: ../SymbolsNames.cpp
 CMakeFiles/Parser.dir/SymbolsNames.cpp.obj: ../SymbolsNames.h
 
+CMakeFiles/Parser.dir/main.cpp.obj: ../ImmediateLeftRecursion.h
 CMakeFiles/Parser.dir/main.cpp.obj: ../InputHandler.h
+CMakeFiles/Parser.dir/main.cpp.obj: ../LeftFactoring.h
+CMakeFiles/Parser.dir/main.cpp.obj: ../NotImmediateLeftRecursion.h
+CMakeFiles/Parser.dir/main.cpp.obj: ../SymbolsNames.h
 CMakeFiles/Parser.dir/main.cpp.obj: ../main.cpp
 
 CMakeFiles/Parser.dir/parsing.cpp.obj: ../parsing.cpp

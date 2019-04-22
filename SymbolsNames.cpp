@@ -4,11 +4,20 @@
 
 #include "SymbolsNames.h"
 
+static SymbolsNames *instance = nullptr;
+
+SymbolsNames *SymbolsNames::getInstance() {
+    if (instance == nullptr) {
+        instance = new SymbolsNames();
+    }
+    return instance;
+}
+
+
 string SymbolsNames::getASymbolName(string originalSymbol) {
     string newSymbol = originalSymbol + "'";
-    vector<string> lhs = inputHandler->getLHS();
-    for (int lhsIndex = 0; lhsIndex < lhs.size(); ++lhsIndex) {
-        if (newSymbol == lhs[lhsIndex]) {
+    for (int lhsIndex = 0; lhsIndex < inputHandler->getLHSSize(); ++lhsIndex) {
+        if (newSymbol == inputHandler->getLHSByIndex(lhsIndex)) {
             newSymbol += "'";
         }
     }

@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.cpp
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.cpp
+ImmediateLeftRecursion.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
+string
+-
+vector
+-
 InputHandler.h
 E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
-fstream
--
-iostream
--
-sstream
--
-bits/stdc++.h
--
-map
--
+SymbolsNames.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
 
 E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
 fstream
@@ -30,5 +30,65 @@ sstream
 map
 -
 vector
+-
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.cpp
+LeftFactoring.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.h
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.h
+string
+-
+vector
+-
+InputHandler.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
+SymbolsNames.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.cpp
+NotImmediateLeftRecursion.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.h
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.h
+string
+-
+vector
+-
+InputHandler.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
+ImmediateLeftRecursion.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.cpp
+SymbolsNames.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
+InputHandler.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/main.cpp
+iostream
+-
+InputHandler.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
+InputHandler.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
+ImmediateLeftRecursion.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
+NotImmediateLeftRecursion.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.h
+LeftFactoring.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.h
+fstream
+-
+iostream
+-
+sstream
+-
+bits/stdc++.h
+-
+map
 -
 

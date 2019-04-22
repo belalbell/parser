@@ -15,7 +15,7 @@ using namespace std;
 class ImmediateLeftRecursion {
 private:
     InputHandler* inputHandler = InputHandler::getInstance();
-    SymbolsNames * symbolsNames ;
+    SymbolsNames * symbolsNames =SymbolsNames::getInstance() ;
 
 public:
     static ImmediateLeftRecursion* getInstance();

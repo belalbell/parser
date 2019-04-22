@@ -15,7 +15,7 @@ using namespace std;
 class LeftFactoring {
 private:
     InputHandler *inputHandler = InputHandler::getInstance();
-    SymbolsNames * symbolsNames ;
+    SymbolsNames * symbolsNames =SymbolsNames::getInstance();
 public:
     static LeftFactoring *getInstance();
 
