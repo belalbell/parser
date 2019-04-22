@@ -78,6 +78,7 @@ void Save_Load::Load(std::vector<std::vector<std::string>> *parsingTable, std::v
                 tableRow.push_back(entries.at(i));
             }
 
+
             parsingTable->push_back(tableRow);
         }
 
