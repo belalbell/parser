@@ -27,6 +27,8 @@ public:
     void follow();
     int getTerminalIndex(string terminal);
     int getLhsIndex(string lhs);
+    map<string,int> getterminalIndex();
+    map<string,int> getlhsIndex();
 
 };
 
