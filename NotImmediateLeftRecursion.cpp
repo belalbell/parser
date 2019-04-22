@@ -4,13 +4,13 @@
 
 #include "NotImmediateLeftRecursion.h"
 
-static NotImmediateLeftRecursion *insatnce = nullptr;
+static NotImmediateLeftRecursion *instance = nullptr;
 
 NotImmediateLeftRecursion *NotImmediateLeftRecursion::getInstance() {
-    if (insatnce == nullptr) {
-        insatnce = new NotImmediateLeftRecursion();
+    if (instance == nullptr) {
+        instance = new NotImmediateLeftRecursion();
     }
-    return insatnce;
+    return instance;
 }
 
 void NotImmediateLeftRecursion::eliminateNotImmediateLeftRecursion() {

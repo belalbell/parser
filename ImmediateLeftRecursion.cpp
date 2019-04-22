@@ -4,13 +4,13 @@
 
 #include "ImmediateLeftRecursion.h"
 
-static ImmediateLeftRecursion *insatnce = nullptr;
+static ImmediateLeftRecursion *instance = nullptr;
 
 ImmediateLeftRecursion *ImmediateLeftRecursion::getInstance() {
-    if (insatnce == nullptr) {
-        insatnce = new ImmediateLeftRecursion();
+    if (instance == nullptr) {
+        instance = new ImmediateLeftRecursion();
     }
-    return insatnce;
+    return instance;
 }
 
 void ImmediateLeftRecursion::eliminateImmediateLeftRecursion(string symbol, vector<string> splittedGrammar) {
