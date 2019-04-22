@@ -15,7 +15,7 @@ LeftFactoring *LeftFactoring::getInstance() {
 
 vector<string> LeftFactoring::createLeftFactoredGrammar(vector<string> comparedGrammar, int letterTokenIndex,
                                                         string symbol, vector<string> currentGrammar) {
-    string newSymbol = symbol + symbol, temp;
+    string newSymbol = symbolsNames->getASymbolName(symbol), temp;
     vector<string> originalGrammar, newGrammar;
     inputHandler->setLHS(newSymbol);
     string currentToken = comparedGrammar[0].substr(0, letterTokenIndex);
@@ -45,7 +45,7 @@ vector<string> LeftFactoring::eraseNonMatchedNodes(string originalStr, vector<st
             for (int nodeIndex = 0; nodeIndex < grammarTemp.size(); ++nodeIndex) {
                 if (letterIndex == 0) {
                     if (originalStr[0] != grammarTemp[nodeIndex].at(0)) {
-                        grammarTemp.erase(grammarTemp.begin()+nodeIndex,grammarTemp.begin()+nodeIndex+1);
+                        grammarTemp.erase(grammarTemp.begin() + nodeIndex, grammarTemp.begin() + nodeIndex + 1);
                     }
                 } else {
                     if (originalStr[letterIndex] != grammarTemp[nodeIndex].at(letterIndex)) {

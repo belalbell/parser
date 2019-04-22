@@ -8,12 +8,15 @@
 #include <string>
 #include <vector>
 #include "InputHandler.h"
+#include "SymbolsNames.h"
 
 using namespace std;
 
 class ImmediateLeftRecursion {
 private:
     InputHandler* inputHandler = InputHandler::getInstance();
+    SymbolsNames * symbolsNames = SymbolsNames::getInstance();
+
 public:
     static ImmediateLeftRecursion* getInstance();
 

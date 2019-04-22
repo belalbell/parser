@@ -15,7 +15,7 @@ ImmediateLeftRecursion *ImmediateLeftRecursion::getInstance() {
 
 void ImmediateLeftRecursion::eliminateImmediateLeftRecursion(string symbol, vector<string> splittedGrammar) {
     vector<string> firstGrammar, secondGrammar;
-    string temp = "", symbolDash = symbol + "'";
+    string temp = "", symbolDash = symbolsNames->getASymbolName(symbol);
     int symbolSize = symbol.size();
     inputHandler->setLHS(symbolDash);
     for (int nodeIndex = 0; nodeIndex < splittedGrammar.size(); ++nodeIndex) {

@@ -8,12 +8,14 @@
 #include <string>
 #include <vector>
 #include "InputHandler.h"
+#include "SymbolsNames.h"
 
 using namespace std;
 
 class LeftFactoring {
 private:
     InputHandler *inputHandler = InputHandler::getInstance();
+    SymbolsNames * symbolsNames = SymbolsNames::getInstance();
 public:
     static LeftFactoring *getInstance();
 
