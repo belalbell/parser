@@ -20,7 +20,7 @@ void NotImmediateLeftRecursion::eliminateNotImmediateLeftRecursion() {
 
     for (int lhsIndex = 0; lhsIndex < inputHandler->getLHS().size(); ++lhsIndex) {
         currentSymbol = inputHandler->getLHS()[lhsIndex];
-        for (int rhsIndex = 0; rhsIndex < inputHandler->getLeftToRight().size(); ++rhsIndex) {
+        for (int rhsIndex = lhsIndex+1; rhsIndex < inputHandler->getLeftToRight().size(); ++rhsIndex) {
             firstSymbolExistenceIndex = findSymbolExistenceIndex(inputHandler->getLHSByIndex(lhsIndex),
                                                                  inputHandler->getRHSByIndex(rhsIndex));
             if (firstSymbolExistenceIndex != -1) {

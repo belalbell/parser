@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.cpp
-ImmediateLeftRecursion.h
-E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
-
 E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
 string
 -
@@ -31,6 +27,20 @@ map
 -
 vector
 -
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.cpp
+NotImmediateLeftRecursion.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.h
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.h
+string
+-
+vector
+-
+InputHandler.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
+ImmediateLeftRecursion.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/ImmediateLeftRecursion.h
 
 E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
 InputHandler.h
