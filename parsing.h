@@ -7,15 +7,17 @@
 
 #include <string>
 #include <map>
-
+#include "InputHandler.h"
 
 using namespace std;
 
 class parsing {
 private:
+    InputHandler* inputHandler = InputHandler::getInstance();
     string** parsingTable =new string*();
     map<string,int> terminalIndex;
     map<string,int> lhsIndex;
+    map<string,vector<string>> firstMap;
 
 public:
 

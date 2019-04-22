@@ -6,20 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/belal/Downloads/Parser/InputHandler.cpp
-InputHandler.h
-/home/belal/Downloads/Parser/InputHandler.h
-fstream
--
-iostream
--
-sstream
--
-bits/stdc++.h
--
-map
--
-
 /home/belal/Downloads/Parser/InputHandler.h
 fstream
 -
@@ -32,7 +18,23 @@ map
 vector
 -
 
-/home/belal/Downloads/Parser/parsing.cpp
+/home/belal/Downloads/Parser/main.cpp
+iostream
+-
+InputHandler.h
+/home/belal/Downloads/Parser/InputHandler.h
+InputHandler.h
+/home/belal/Downloads/Parser/InputHandler.h
+fstream
+-
+iostream
+-
+sstream
+-
+bits/stdc++.h
+-
+map
+-
 parsing.h
 /home/belal/Downloads/Parser/parsing.h
 
@@ -41,4 +43,6 @@ string
 -
 map
 -
+InputHandler.h
+/home/belal/Downloads/Parser/InputHandler.h
 

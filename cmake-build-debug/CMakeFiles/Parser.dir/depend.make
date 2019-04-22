@@ -6,7 +6,9 @@ CMakeFiles/Parser.dir/InputHandler.cpp.o: ../InputHandler.h
 
 CMakeFiles/Parser.dir/main.cpp.o: ../InputHandler.h
 CMakeFiles/Parser.dir/main.cpp.o: ../main.cpp
+CMakeFiles/Parser.dir/main.cpp.o: ../parsing.h
 
+CMakeFiles/Parser.dir/parsing.cpp.o: ../InputHandler.h
 CMakeFiles/Parser.dir/parsing.cpp.o: ../parsing.cpp
 CMakeFiles/Parser.dir/parsing.cpp.o: ../parsing.h
 
