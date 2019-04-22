@@ -92,6 +92,12 @@
 		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h">
 			<Option target="Parser"/>
 		</Unit>
+		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.cpp">
+			<Option target="Parser"/>
+		</Unit>
+		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/LeftFactoring.h">
+			<Option target="Parser"/>
+		</Unit>
 		<Unit filename="E:/3rd year 2nd semester/compiler/phaseTwo/parser/NotImmediateLeftRecursion.cpp">
 			<Option target="Parser"/>
 		</Unit>

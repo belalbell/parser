@@ -176,6 +176,33 @@ InputHandler.cpp.s:
 	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/InputHandler.cpp.s
 .PHONY : InputHandler.cpp.s
 
+LeftFactoring.obj: LeftFactoring.cpp.obj
+
+.PHONY : LeftFactoring.obj
+
+# target to build an object file
+LeftFactoring.cpp.obj:
+	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/LeftFactoring.cpp.obj
+.PHONY : LeftFactoring.cpp.obj
+
+LeftFactoring.i: LeftFactoring.cpp.i
+
+.PHONY : LeftFactoring.i
+
+# target to preprocess a source file
+LeftFactoring.cpp.i:
+	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/LeftFactoring.cpp.i
+.PHONY : LeftFactoring.cpp.i
+
+LeftFactoring.s: LeftFactoring.cpp.s
+
+.PHONY : LeftFactoring.s
+
+# target to generate assembly for a file
+LeftFactoring.cpp.s:
+	$(MAKE) -f CMakeFiles\Parser.dir\build.make CMakeFiles/Parser.dir/LeftFactoring.cpp.s
+.PHONY : LeftFactoring.cpp.s
+
 NotImmediateLeftRecursion.obj: NotImmediateLeftRecursion.cpp.obj
 
 .PHONY : NotImmediateLeftRecursion.obj
@@ -272,6 +299,9 @@ help:
 	@echo ... InputHandler.obj
 	@echo ... InputHandler.i
 	@echo ... InputHandler.s
+	@echo ... LeftFactoring.obj
+	@echo ... LeftFactoring.i
+	@echo ... LeftFactoring.s
 	@echo ... NotImmediateLeftRecursion.obj
 	@echo ... NotImmediateLeftRecursion.i
 	@echo ... NotImmediateLeftRecursion.s
