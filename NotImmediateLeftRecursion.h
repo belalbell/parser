@@ -23,7 +23,7 @@ public :
 
     vector<string> subistitute(string firstSymbol, vector<string> firstGrammar, vector<string> secondGrammar);
 
-    int findExistanceIndex(string symbol, vector<string> grammar);
+    int findSymbolExistanceIndex(string symbol, vector<string> grammar);
 
 };
 

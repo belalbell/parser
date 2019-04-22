@@ -21,11 +21,11 @@ void NotImmediateLeftRecursion::elemenateNotImmediateLeftRecursion() {
     for (int lhsIndex = 0; lhsIndex < inputHandler->getLHSSize(); ++lhsIndex) {
         currentSymbol = inputHandler->getLHS()[lhsIndex];
         for (int rhsIndex = 0; rhsIndex < inputHandler->getRHSSize(); ++rhsIndex) {
-            firstSymbolExistanceIndex = findExistanceIndex(inputHandler->getLHSByIndex(lhsIndex),
-                                                           inputHandler->getRHSByIndex(rhsIndex));
+            firstSymbolExistanceIndex = findSymbolExistanceIndex(inputHandler->getLHSByIndex(lhsIndex),
+                                                                 inputHandler->getRHSByIndex(rhsIndex));
             if (firstSymbolExistanceIndex != -1) {
-                secondSymbolExistanceIndex = findExistanceIndex(inputHandler->getLHSByIndex(rhsIndex),
-                                                                inputHandler->getRHSByIndex(lhsIndex));
+                secondSymbolExistanceIndex = findSymbolExistanceIndex(inputHandler->getLHSByIndex(rhsIndex),
+                                                                      inputHandler->getRHSByIndex(lhsIndex));
                 if (secondSymbolExistanceIndex != -1) {
                     newFirstGrammmar = subistitute(inputHandler->getLHSByIndex(rhsIndex),
                                                    inputHandler->getRHSByIndex(rhsIndex),
@@ -39,6 +39,15 @@ void NotImmediateLeftRecursion::elemenateNotImmediateLeftRecursion() {
 }
 
 vector<string> NotImmediateLeftRecursion::subistitute(string firstSymbol, vector<string> firstGrammar,
-                                                      vector<string> secondGrammar) {}
+                                                      vector<string> secondGrammar) {
 
-int NotImmediateLeftRecursion::findExistanceIndex(string symbol, vector<string> grammar) {}
+}
+
+int NotImmediateLeftRecursion::findSymbolExistanceIndex(string symbol, vector<string> grammar) {
+    for (int nodeIndex = 0; nodeIndex < grammar.size(); ++nodeIndex) {
+        if (grammar[nodeIndex].find(symbol) == 0) {
+            return nodeIndex;
+        }
+    }
+    return -1;
+}
