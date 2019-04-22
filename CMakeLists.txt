@@ -3,4 +3,4 @@ project(Parser)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Parser main.cpp InputHandler.cpp InputHandler.h parsing.cpp parsing.h)
+add_executable(Parser main.cpp InputHandler.cpp InputHandler.h parsing.cpp parsing.h Save_Load.cpp Save_Load.h)

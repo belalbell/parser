@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Parser.dir/main.cpp.o"
   "CMakeFiles/Parser.dir/InputHandler.cpp.o"
   "CMakeFiles/Parser.dir/parsing.cpp.o"
+  "CMakeFiles/Parser.dir/Save_Load.cpp.o"
   "Parser.pdb"
   "Parser"
 )
