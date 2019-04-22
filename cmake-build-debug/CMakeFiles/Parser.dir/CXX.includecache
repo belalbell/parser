@@ -32,20 +32,12 @@ map
 vector
 -
 
-/home/belal/Downloads/Parser/main.cpp
-iostream
--
-InputHandler.h
-/home/belal/Downloads/Parser/InputHandler.h
-InputHandler.h
-/home/belal/Downloads/Parser/InputHandler.h
-fstream
--
-iostream
--
-sstream
--
-bits/stdc++.h
+/home/belal/Downloads/Parser/parsing.cpp
+parsing.h
+/home/belal/Downloads/Parser/parsing.h
+
+/home/belal/Downloads/Parser/parsing.h
+string
 -
 map
 -
