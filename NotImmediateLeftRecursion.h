@@ -7,12 +7,17 @@
 
 #include <string>
 #include <vector>
+#include "InputHandler.h"
+#include "ImmediateLeftRecursion.h"
 
 using namespace std;
 
 class NotImmediateLeftRecursion {
+private:
+    InputHandler *inputHandler = InputHandler::getInstance();
+    ImmediateLeftRecursion *immediateLeftRecursion = ImmediateLeftRecursion::getInstance();
 public :
-    static NotImmediateLeftRecursion* getInstance();
+    static NotImmediateLeftRecursion *getInstance();
 
     void elemenateNotImmediateLeftRecursion();
 

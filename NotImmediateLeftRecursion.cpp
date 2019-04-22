@@ -13,7 +13,30 @@ NotImmediateLeftRecursion *NotImmediateLeftRecursion::getInstance() {
     return insatnce;
 }
 
-void NotImmediateLeftRecursion::elemenateNotImmediateLeftRecursion() {}
+void NotImmediateLeftRecursion::elemenateNotImmediateLeftRecursion() {
+    string currentSymbol;
+    int firstSymbolExistanceIndex, secondSymbolExistanceIndex;
+    vector<string> newFirstGrammmar;
+
+    for (int lhsIndex = 0; lhsIndex < inputHandler->getLHSSize(); ++lhsIndex) {
+        currentSymbol = inputHandler->getLHS()[lhsIndex];
+        for (int rhsIndex = 0; rhsIndex < inputHandler->getRHSSize(); ++rhsIndex) {
+            firstSymbolExistanceIndex = findExistanceIndex(inputHandler->getLHSByIndex(lhsIndex),
+                                                           inputHandler->getRHSByIndex(rhsIndex));
+            if (firstSymbolExistanceIndex != -1) {
+                secondSymbolExistanceIndex = findExistanceIndex(inputHandler->getLHSByIndex(rhsIndex),
+                                                                inputHandler->getRHSByIndex(lhsIndex));
+                if (secondSymbolExistanceIndex != -1) {
+                    newFirstGrammmar = subistitute(inputHandler->getLHSByIndex(rhsIndex),
+                                                   inputHandler->getRHSByIndex(rhsIndex),
+                                                   inputHandler->getRHSByIndex(lhsIndex)));
+                    immediateLeftRecursion->eliminateImmediateLeftRecursion(inputHandler->getLHSByIndex(lhsIndex),
+                                                                            newFirstGrammmar);
+                }
+            }
+        }
+    }
+}
 
 vector<string> NotImmediateLeftRecursion::subistitute(string firstSymbol, vector<string> firstGrammar,
                                                       vector<string> secondGrammar) {}
