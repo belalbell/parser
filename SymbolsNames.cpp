@@ -4,15 +4,6 @@
 
 #include "SymbolsNames.h"
 
-static SymbolsNames *instance = nullptr;
-
-SymbolsNames *SymbolsNames::getInstance() {
-    if (instance == nullptr) {
-        instance = new SymbolsNames();
-    }
-    return instance;
-}
-
 string SymbolsNames::getASymbolName(string originalSymbol) {
     string newSymbol = originalSymbol + "'";
     vector<string> lhs = inputHandler->getLHS();

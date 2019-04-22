@@ -13,7 +13,6 @@ private:
     InputHandler *inputHandler = InputHandler::getInstance();
 
 public:
-    static SymbolsNames *getInstance();
     string getASymbolName(string originalSymbol);
 
 };
