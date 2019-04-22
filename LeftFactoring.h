@@ -7,16 +7,24 @@
 
 #include <string>
 #include <vector>
+#include "InputHandler.h"
 
 using namespace std;
 
 class LeftFactoring {
+private:
+    InputHandler *inputHandler = InputHandler::getInstance();
 public:
-    static LeftFactoring* getInstance();
+    static LeftFactoring *getInstance();
+
     void perfomLeftFactoring();
-    vector<string> findGrammarToCompare(int startIndex,vector<string>currentGrammar);
-    vector<string> createLeftFactoredGrammar(vector<string>comparedGrammar,int letterTokenIndex,string symbol,vector<string> currentGrammar);
-    vector<string> eraseNonMatchNodes(string originalStr,vector<string> currentGrammar,int startComparedIndex);
+
+    vector<string> findGrammarToCompare(int startIndex, vector<string> currentGrammar);
+
+    vector<string> createLeftFactoredGrammar(vector<string> comparedGrammar, int letterTokenIndex, string symbol,
+                                             vector<string> currentGrammar);
+
+    vector<string> eraseNonMatchNodes(string originalStr, vector<string> currentGrammar, int startComparedIndex);
 };
 
 
