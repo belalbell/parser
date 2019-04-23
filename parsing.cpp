@@ -126,18 +126,25 @@ void parsing::follow() {
 void parsing::initalizeTable() {
     vector<string> lhs = inputHandler->getLHSinputs();
     vector<string> terminals = inputHandler->getTerminals();
+    bool flag = true;
     for (int i = 0; i <lhs.size(); ++i) {
         vector<string>*tmp =new vector<string>();
         lhsIndex[lhs.at(i)]=i;
         for (int j = 0; j < terminals.size(); ++j) {
-            terminalIndex[terminals.at(j)]=j;
+            if (flag) {
+                terminalIndex[terminals.at(j)] = j;
+            }
             tmp->push_back("error");
         }
+        flag=false;
         parsingTable.push_back(*tmp);
     }
     terminalIndex["$"]=terminals.size();
 }
 
 void parsing::constractTable() {
+    vector<string> lhs = inputHandler->getLHSinputs();
+    for (int i = 0; i < lhs.size(); ++i) {
 
+    }
 }
