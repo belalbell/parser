@@ -15,7 +15,7 @@ using namespace std;
 
 class InputHandler {
 private:
-
+    string startingState;
     vector<string> LHSinputs;
     vector<string> RHSinputs;
     vector<string> RHStokens;
@@ -51,6 +51,8 @@ public:
     int getRHSSize();
     string getLHSByIndex(int index);
     vector<string> getRHSByIndex(int index);
+    string getStartingState();
+    void checkIfTerminal(string token);
 
 };
 

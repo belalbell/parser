@@ -29,5 +29,7 @@ int main() {
     parsing* parsing = parsing::getInstance();
     parsing->first();
     parsing->follow();
+    parsing->initalizeTable();
+    parsing->constractTable();
     return 0;
 }

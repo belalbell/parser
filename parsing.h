@@ -32,6 +32,7 @@ public:
     map<string,int> getterminalIndex();
     map<string,int> getlhsIndex();
     vector<vector<string>> getParsingTable();
+    map<string,vector<string>> getFollowMap();
 
 };
 

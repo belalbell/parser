@@ -127,24 +127,73 @@ void parsing::initalizeTable() {
     vector<string> lhs = inputHandler->getLHSinputs();
     vector<string> terminals = inputHandler->getTerminals();
     bool flag = true;
-    for (int i = 0; i <lhs.size(); ++i) {
-        vector<string>*tmp =new vector<string>();
-        lhsIndex[lhs.at(i)]=i;
-        for (int j = 0; j < terminals.size(); ++j) {
-            if (flag) {
+    for (int i = 0; i < lhs.size(); ++i) {
+        vector<string> *tmp = new vector<string>();
+        lhsIndex[lhs.at(i)] = i;
+        for (int j = 0; j <= terminals.size(); ++j) {
+            if (flag && j < terminals.size()) {
                 terminalIndex[terminals.at(j)] = j;
             }
             tmp->push_back("error");
         }
-        flag=false;
+        flag = false;
         parsingTable.push_back(*tmp);
     }
-    terminalIndex["$"]=terminals.size();
+    terminalIndex["$"] = terminals.size();
+    cout << "init table done" << endl;
 }
 
 void parsing::constractTable() {
     vector<string> lhs = inputHandler->getLHSinputs();
     for (int i = 0; i < lhs.size(); ++i) {
-
+        vector<string> rhs = inputHandler->getRHSByIndex(i);
+        for (int j = 0; j < rhs.size(); ++j) {
+            string key = rhs.at(j);
+            key.erase(remove_if(key.begin(), key.end(), ::isspace), key.end());
+            vector<string> first = firstMap[key];
+            for (int k = 0; k < first.size(); ++k) {
+//                if (first.at(k) != "error")
+//                    continue;
+                if (first.at(k) == "\\L") {
+                    string tmp = lhs.at(i);
+                    tmp.erase(remove_if(tmp.begin(), tmp.end(), ::isspace), tmp.end());
+                    vector<string> follow = followMap[tmp];
+                    for (int l = 0; l < follow.size(); ++l) {
+                        int row = i;
+                        int col = terminalIndex[follow.at(l)];
+                        parsingTable.at(row).at(col) = rhs.at(j);
+                    }
+                } else {
+                    int row = i;
+                    int col = terminalIndex[first.at(k)];
+                    parsingTable.at(row).at(col) = rhs.at(j);
+                }
+            }
+        }
     }
+    cout << "table done" << endl;
+}
+
+int parsing::getLhsIndex(string lhs) {
+    return lhsIndex[lhs];
+}
+
+int parsing::getTerminalIndex(string terminal) {
+    return terminalIndex[terminal];
+}
+
+map<string, int> parsing::getterminalIndex() {
+    return terminalIndex;
+}
+
+map<string, int> parsing::getlhsIndex() {
+    return lhsIndex;
+}
+
+vector<vector<string>> parsing::getParsingTable() {
+    return parsingTable;
+}
+
+map<string, vector<string>> parsing::getFollowMap() {
+    return followMap;
 }
