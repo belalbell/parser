@@ -1,0 +1,7 @@
+	term	term	term	term	term
+
+lhs	val	val	val	val	val	
+lhs	val	val	val	val	val	
+lhs	val	val	val	val	val	
+lhs	val	val	val	val	val	
+lhs	val	val	val	val	val	
