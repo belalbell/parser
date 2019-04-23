@@ -312,6 +312,33 @@ parsing.cpp.s:
 	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/parsing.cpp.s
 .PHONY : parsing.cpp.s
 
+tableTracer.o: tableTracer.cpp.o
+
+.PHONY : tableTracer.o
+
+# target to build an object file
+tableTracer.cpp.o:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/tableTracer.cpp.o
+.PHONY : tableTracer.cpp.o
+
+tableTracer.i: tableTracer.cpp.i
+
+.PHONY : tableTracer.i
+
+# target to preprocess a source file
+tableTracer.cpp.i:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/tableTracer.cpp.i
+.PHONY : tableTracer.cpp.i
+
+tableTracer.s: tableTracer.cpp.s
+
+.PHONY : tableTracer.s
+
+# target to generate assembly for a file
+tableTracer.cpp.s:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/tableTracer.cpp.s
+.PHONY : tableTracer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -342,6 +369,9 @@ help:
 	@echo "... parsing.o"
 	@echo "... parsing.i"
 	@echo "... parsing.s"
+	@echo "... tableTracer.o"
+	@echo "... tableTracer.i"
+	@echo "... tableTracer.s"
 .PHONY : help
 
 

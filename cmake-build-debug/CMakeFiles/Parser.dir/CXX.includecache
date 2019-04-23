@@ -77,12 +77,8 @@ map
 -
 parsing.h
 /home/belal/Downloads/Parser/parsing.h
-
-/home/belal/Downloads/Parser/parsing.cpp
-algorithm
--
-parsing.h
-/home/belal/Downloads/Parser/parsing.h
+tableTracer.h
+/home/belal/Downloads/Parser/tableTracer.h
 
 /home/belal/Downloads/Parser/parsing.h
 string
@@ -91,4 +87,22 @@ map
 -
 InputHandler.h
 /home/belal/Downloads/Parser/InputHandler.h
+
+/home/belal/Downloads/Parser/tableTracer.h
+fstream
+-
+iostream
+-
+sstream
+-
+map
+-
+vector
+-
+stack
+-
+InputHandler.h
+/home/belal/Downloads/Parser/InputHandler.h
+parsing.h
+/home/belal/Downloads/Parser/parsing.h
 

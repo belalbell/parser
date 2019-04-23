@@ -28,24 +28,14 @@ void InputHandler::readFile(string address) {
     tmp.erase(std::remove(tmp.begin(), tmp.end(), '\''), tmp.end());
     while (getline(in, nextLine)) {
         nextLine.erase(std::remove(nextLine.begin(), nextLine.end(), '\''), nextLine.end());
-<<<<<<< HEAD
-        while (true){
-            if (nextLine.at(0) != '#'){
-=======
         while (true) {
             if (nextLine.at(0) != '#') {
->>>>>>> belal
                 tmp.append(" ");
                 tmp.append(nextLine);
                 getline(in, nextLine);
                 nextLine.erase(std::remove(nextLine.begin(), nextLine.end(), '\''), nextLine.end());
-<<<<<<< HEAD
-            } else{
-                tmp.erase(0 ,2);
-=======
             } else {
                 tmp.erase(0, 2);
->>>>>>> belal
                 LeftRightInputs(tmp);
                 tmp = nextLine;
                 break;
@@ -69,11 +59,8 @@ void InputHandler::LeftRightInputs(string line){
 //    for (int i = 0; i < RHS.size(); ++i) {
 //        RHSinputs.at(i).erase(std::remove(RHSinputs.at(i).begin(), RHSinputs.at(i).end(), '\''), RHSinputs.at(i).end());
 //    }
-<<<<<<< HEAD
-    leftToRight[LHS] = RHSinputs ;
-=======
+
     leftToRight[LHS] = RHSinputs;
->>>>>>> belal
 
 
 }

@@ -31,12 +31,14 @@ CMakeFiles/Parser.dir/main.cpp.o: ../NotImmediateLeftRecursion.h
 CMakeFiles/Parser.dir/main.cpp.o: ../SymbolsNames.h
 CMakeFiles/Parser.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Parser.dir/main.cpp.o: ../parsing.h
+CMakeFiles/Parser.dir/main.cpp.o: ../tableTracer.h
 
 CMakeFiles/Parser.dir/parsing.cpp.o: ../InputHandler.h
 CMakeFiles/Parser.dir/parsing.cpp.o: ../parsing.cpp
 CMakeFiles/Parser.dir/parsing.cpp.o: ../parsing.h
 
-CMakeFiles/Parser.dir/parsing.cpp.o: ../InputHandler.h
-CMakeFiles/Parser.dir/parsing.cpp.o: ../parsing.cpp
-CMakeFiles/Parser.dir/parsing.cpp.o: ../parsing.h
+CMakeFiles/Parser.dir/tableTracer.cpp.o: ../InputHandler.h
+CMakeFiles/Parser.dir/tableTracer.cpp.o: ../parsing.h
+CMakeFiles/Parser.dir/tableTracer.cpp.o: ../tableTracer.cpp
+CMakeFiles/Parser.dir/tableTracer.cpp.o: ../tableTracer.h
 

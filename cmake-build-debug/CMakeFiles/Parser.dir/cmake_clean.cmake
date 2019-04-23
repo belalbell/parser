@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.o"
   "CMakeFiles/Parser.dir/LeftFactoring.cpp.o"
   "CMakeFiles/Parser.dir/SymbolsNames.cpp.o"
+  "CMakeFiles/Parser.dir/tableTracer.cpp.o"
   "Parser.pdb"
   "Parser"
 )

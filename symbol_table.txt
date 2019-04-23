@@ -1,0 +1,20 @@
+Token name 			 Token value
+int					int
+id					x
+;					;
+id					x
+=					=
+num					5
+;					;
+if					if
+(					(
+id					x
+relop					>
+num					2
+)					)
+{					{
+id					x
+=					=
+num					0
+;					;
+}					}

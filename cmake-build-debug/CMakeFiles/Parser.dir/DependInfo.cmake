@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/belal/Downloads/Parser/SymbolsNames.cpp" "/home/belal/Downloads/Parser/cmake-build-debug/CMakeFiles/Parser.dir/SymbolsNames.cpp.o"
   "/home/belal/Downloads/Parser/main.cpp" "/home/belal/Downloads/Parser/cmake-build-debug/CMakeFiles/Parser.dir/main.cpp.o"
   "/home/belal/Downloads/Parser/parsing.cpp" "/home/belal/Downloads/Parser/cmake-build-debug/CMakeFiles/Parser.dir/parsing.cpp.o"
+  "/home/belal/Downloads/Parser/tableTracer.cpp" "/home/belal/Downloads/Parser/cmake-build-debug/CMakeFiles/Parser.dir/tableTracer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
