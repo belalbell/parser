@@ -123,6 +123,33 @@ Parser/fast:
 	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/build
 .PHONY : Parser/fast
 
+ImmediateLeftRecursion.o: ImmediateLeftRecursion.cpp.o
+
+.PHONY : ImmediateLeftRecursion.o
+
+# target to build an object file
+ImmediateLeftRecursion.cpp.o:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.o
+.PHONY : ImmediateLeftRecursion.cpp.o
+
+ImmediateLeftRecursion.i: ImmediateLeftRecursion.cpp.i
+
+.PHONY : ImmediateLeftRecursion.i
+
+# target to preprocess a source file
+ImmediateLeftRecursion.cpp.i:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.i
+.PHONY : ImmediateLeftRecursion.cpp.i
+
+ImmediateLeftRecursion.s: ImmediateLeftRecursion.cpp.s
+
+.PHONY : ImmediateLeftRecursion.s
+
+# target to generate assembly for a file
+ImmediateLeftRecursion.cpp.s:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.s
+.PHONY : ImmediateLeftRecursion.cpp.s
+
 InputHandler.o: InputHandler.cpp.o
 
 .PHONY : InputHandler.o
@@ -150,32 +177,86 @@ InputHandler.cpp.s:
 	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/InputHandler.cpp.s
 .PHONY : InputHandler.cpp.s
 
-Save_Load.o: Save_Load.cpp.o
+LeftFactoring.o: LeftFactoring.cpp.o
 
-.PHONY : Save_Load.o
+.PHONY : LeftFactoring.o
 
 # target to build an object file
-Save_Load.cpp.o:
-	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/Save_Load.cpp.o
-.PHONY : Save_Load.cpp.o
+LeftFactoring.cpp.o:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/LeftFactoring.cpp.o
+.PHONY : LeftFactoring.cpp.o
 
-Save_Load.i: Save_Load.cpp.i
+LeftFactoring.i: LeftFactoring.cpp.i
 
-.PHONY : Save_Load.i
+.PHONY : LeftFactoring.i
 
 # target to preprocess a source file
-Save_Load.cpp.i:
-	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/Save_Load.cpp.i
-.PHONY : Save_Load.cpp.i
+LeftFactoring.cpp.i:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/LeftFactoring.cpp.i
+.PHONY : LeftFactoring.cpp.i
 
-Save_Load.s: Save_Load.cpp.s
+LeftFactoring.s: LeftFactoring.cpp.s
 
-.PHONY : Save_Load.s
+.PHONY : LeftFactoring.s
 
 # target to generate assembly for a file
-Save_Load.cpp.s:
-	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/Save_Load.cpp.s
-.PHONY : Save_Load.cpp.s
+LeftFactoring.cpp.s:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/LeftFactoring.cpp.s
+.PHONY : LeftFactoring.cpp.s
+
+NotImmediateLeftRecursion.o: NotImmediateLeftRecursion.cpp.o
+
+.PHONY : NotImmediateLeftRecursion.o
+
+# target to build an object file
+NotImmediateLeftRecursion.cpp.o:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.o
+.PHONY : NotImmediateLeftRecursion.cpp.o
+
+NotImmediateLeftRecursion.i: NotImmediateLeftRecursion.cpp.i
+
+.PHONY : NotImmediateLeftRecursion.i
+
+# target to preprocess a source file
+NotImmediateLeftRecursion.cpp.i:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.i
+.PHONY : NotImmediateLeftRecursion.cpp.i
+
+NotImmediateLeftRecursion.s: NotImmediateLeftRecursion.cpp.s
+
+.PHONY : NotImmediateLeftRecursion.s
+
+# target to generate assembly for a file
+NotImmediateLeftRecursion.cpp.s:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.s
+.PHONY : NotImmediateLeftRecursion.cpp.s
+
+SymbolsNames.o: SymbolsNames.cpp.o
+
+.PHONY : SymbolsNames.o
+
+# target to build an object file
+SymbolsNames.cpp.o:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/SymbolsNames.cpp.o
+.PHONY : SymbolsNames.cpp.o
+
+SymbolsNames.i: SymbolsNames.cpp.i
+
+.PHONY : SymbolsNames.i
+
+# target to preprocess a source file
+SymbolsNames.cpp.i:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/SymbolsNames.cpp.i
+.PHONY : SymbolsNames.cpp.i
+
+SymbolsNames.s: SymbolsNames.cpp.s
+
+.PHONY : SymbolsNames.s
+
+# target to generate assembly for a file
+SymbolsNames.cpp.s:
+	$(MAKE) -f CMakeFiles/Parser.dir/build.make CMakeFiles/Parser.dir/SymbolsNames.cpp.s
+.PHONY : SymbolsNames.cpp.s
 
 main.o: main.cpp.o
 
@@ -240,12 +321,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Parser"
 	@echo "... edit_cache"
+	@echo "... ImmediateLeftRecursion.o"
+	@echo "... ImmediateLeftRecursion.i"
+	@echo "... ImmediateLeftRecursion.s"
 	@echo "... InputHandler.o"
 	@echo "... InputHandler.i"
 	@echo "... InputHandler.s"
-	@echo "... Save_Load.o"
-	@echo "... Save_Load.i"
-	@echo "... Save_Load.s"
+	@echo "... LeftFactoring.o"
+	@echo "... LeftFactoring.i"
+	@echo "... LeftFactoring.s"
+	@echo "... NotImmediateLeftRecursion.o"
+	@echo "... NotImmediateLeftRecursion.i"
+	@echo "... NotImmediateLeftRecursion.s"
+	@echo "... SymbolsNames.o"
+	@echo "... SymbolsNames.i"
+	@echo "... SymbolsNames.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

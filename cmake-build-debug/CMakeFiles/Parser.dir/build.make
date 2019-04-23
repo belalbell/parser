@@ -96,25 +96,67 @@ CMakeFiles/Parser.dir/parsing.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Parser.dir/parsing.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/belal/Downloads/Parser/parsing.cpp -o CMakeFiles/Parser.dir/parsing.cpp.s
 
-CMakeFiles/Parser.dir/Save_Load.cpp.o: CMakeFiles/Parser.dir/flags.make
-CMakeFiles/Parser.dir/Save_Load.cpp.o: ../Save_Load.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/belal/Downloads/Parser/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Parser.dir/Save_Load.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Parser.dir/Save_Load.cpp.o -c /home/belal/Downloads/Parser/Save_Load.cpp
+CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.o: CMakeFiles/Parser.dir/flags.make
+CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.o: ../ImmediateLeftRecursion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/belal/Downloads/Parser/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.o -c /home/belal/Downloads/Parser/ImmediateLeftRecursion.cpp
 
-CMakeFiles/Parser.dir/Save_Load.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Parser.dir/Save_Load.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/belal/Downloads/Parser/Save_Load.cpp > CMakeFiles/Parser.dir/Save_Load.cpp.i
+CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/belal/Downloads/Parser/ImmediateLeftRecursion.cpp > CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.i
 
-CMakeFiles/Parser.dir/Save_Load.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Parser.dir/Save_Load.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/belal/Downloads/Parser/Save_Load.cpp -o CMakeFiles/Parser.dir/Save_Load.cpp.s
+CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/belal/Downloads/Parser/ImmediateLeftRecursion.cpp -o CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.s
+
+CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.o: CMakeFiles/Parser.dir/flags.make
+CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.o: ../NotImmediateLeftRecursion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/belal/Downloads/Parser/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.o -c /home/belal/Downloads/Parser/NotImmediateLeftRecursion.cpp
+
+CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/belal/Downloads/Parser/NotImmediateLeftRecursion.cpp > CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.i
+
+CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/belal/Downloads/Parser/NotImmediateLeftRecursion.cpp -o CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.s
+
+CMakeFiles/Parser.dir/LeftFactoring.cpp.o: CMakeFiles/Parser.dir/flags.make
+CMakeFiles/Parser.dir/LeftFactoring.cpp.o: ../LeftFactoring.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/belal/Downloads/Parser/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Parser.dir/LeftFactoring.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Parser.dir/LeftFactoring.cpp.o -c /home/belal/Downloads/Parser/LeftFactoring.cpp
+
+CMakeFiles/Parser.dir/LeftFactoring.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Parser.dir/LeftFactoring.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/belal/Downloads/Parser/LeftFactoring.cpp > CMakeFiles/Parser.dir/LeftFactoring.cpp.i
+
+CMakeFiles/Parser.dir/LeftFactoring.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Parser.dir/LeftFactoring.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/belal/Downloads/Parser/LeftFactoring.cpp -o CMakeFiles/Parser.dir/LeftFactoring.cpp.s
+
+CMakeFiles/Parser.dir/SymbolsNames.cpp.o: CMakeFiles/Parser.dir/flags.make
+CMakeFiles/Parser.dir/SymbolsNames.cpp.o: ../SymbolsNames.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/belal/Downloads/Parser/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Parser.dir/SymbolsNames.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Parser.dir/SymbolsNames.cpp.o -c /home/belal/Downloads/Parser/SymbolsNames.cpp
+
+CMakeFiles/Parser.dir/SymbolsNames.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Parser.dir/SymbolsNames.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/belal/Downloads/Parser/SymbolsNames.cpp > CMakeFiles/Parser.dir/SymbolsNames.cpp.i
+
+CMakeFiles/Parser.dir/SymbolsNames.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Parser.dir/SymbolsNames.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/belal/Downloads/Parser/SymbolsNames.cpp -o CMakeFiles/Parser.dir/SymbolsNames.cpp.s
 
 # Object files for target Parser
 Parser_OBJECTS = \
 "CMakeFiles/Parser.dir/main.cpp.o" \
 "CMakeFiles/Parser.dir/InputHandler.cpp.o" \
 "CMakeFiles/Parser.dir/parsing.cpp.o" \
-"CMakeFiles/Parser.dir/Save_Load.cpp.o"
+"CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.o" \
+"CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.o" \
+"CMakeFiles/Parser.dir/LeftFactoring.cpp.o" \
+"CMakeFiles/Parser.dir/SymbolsNames.cpp.o"
 
 # External object files for target Parser
 Parser_EXTERNAL_OBJECTS =
@@ -122,10 +164,13 @@ Parser_EXTERNAL_OBJECTS =
 Parser: CMakeFiles/Parser.dir/main.cpp.o
 Parser: CMakeFiles/Parser.dir/InputHandler.cpp.o
 Parser: CMakeFiles/Parser.dir/parsing.cpp.o
-Parser: CMakeFiles/Parser.dir/Save_Load.cpp.o
+Parser: CMakeFiles/Parser.dir/ImmediateLeftRecursion.cpp.o
+Parser: CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.o
+Parser: CMakeFiles/Parser.dir/LeftFactoring.cpp.o
+Parser: CMakeFiles/Parser.dir/SymbolsNames.cpp.o
 Parser: CMakeFiles/Parser.dir/build.make
 Parser: CMakeFiles/Parser.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/belal/Downloads/Parser/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/belal/Downloads/Parser/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Parser"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Parser.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

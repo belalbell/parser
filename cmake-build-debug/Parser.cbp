@@ -84,16 +84,34 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/belal/Downloads/Parser/ImmediateLeftRecursion.cpp">
+			<Option target="Parser"/>
+		</Unit>
+		<Unit filename="/home/belal/Downloads/Parser/ImmediateLeftRecursion.h">
+			<Option target="Parser"/>
+		</Unit>
 		<Unit filename="/home/belal/Downloads/Parser/InputHandler.cpp">
 			<Option target="Parser"/>
 		</Unit>
 		<Unit filename="/home/belal/Downloads/Parser/InputHandler.h">
 			<Option target="Parser"/>
 		</Unit>
-		<Unit filename="/home/belal/Downloads/Parser/Save_Load.cpp">
+		<Unit filename="/home/belal/Downloads/Parser/LeftFactoring.cpp">
 			<Option target="Parser"/>
 		</Unit>
-		<Unit filename="/home/belal/Downloads/Parser/Save_Load.h">
+		<Unit filename="/home/belal/Downloads/Parser/LeftFactoring.h">
+			<Option target="Parser"/>
+		</Unit>
+		<Unit filename="/home/belal/Downloads/Parser/NotImmediateLeftRecursion.cpp">
+			<Option target="Parser"/>
+		</Unit>
+		<Unit filename="/home/belal/Downloads/Parser/NotImmediateLeftRecursion.h">
+			<Option target="Parser"/>
+		</Unit>
+		<Unit filename="/home/belal/Downloads/Parser/SymbolsNames.cpp">
+			<Option target="Parser"/>
+		</Unit>
+		<Unit filename="/home/belal/Downloads/Parser/SymbolsNames.h">
 			<Option target="Parser"/>
 		</Unit>
 		<Unit filename="/home/belal/Downloads/Parser/main.cpp">
