@@ -23,9 +23,10 @@ private:
 public:
 
     static parsing* getInstance();
-    string** detParsingTable();
     void first();
     void follow();
+    void initalizeTable();
+    void constractTable();
     int getTerminalIndex(string terminal);
     int getLhsIndex(string lhs);
     map<string,int> getterminalIndex();

@@ -41,7 +41,7 @@ void parsing::first() {
         }
         firstMap[lhs] = *tmp;
     }
-    cout << "first lhs done "<<endl;
+    cout << "first lhs done " << endl;
     for (int l = 0; l < lhsSize; ++l) {
         vector<string> rhs = inputHandler->getRHSByIndex(l);
         for (int i = 0; i < rhs.size(); ++i) {
@@ -61,7 +61,7 @@ void parsing::first() {
             firstMap[rhsElement] = *tmp;
         }
     }
-    cout << "first lhs done "<<endl;
+    cout << "first lhs done " << endl;
 }
 
 void parsing::follow() {
@@ -90,7 +90,7 @@ void parsing::follow() {
                             }
                         } else if (token.at(l + 1) != " ") {
                             if (token.at(l + 1)[0] >= 'A' && token.at(l + 1)[0] <= 'Z') {
-                                string str = token.at(l+1);
+                                string str = token.at(l + 1);
                                 str.erase(remove_if(str.begin(), str.end(), ::isspace), str.end());
                                 vector<string> clone = firstMap[str];
                                 for (int m = 0; m < clone.size(); ++m) {
@@ -120,7 +120,24 @@ void parsing::follow() {
         }
         followMap[lhs] = *tmp;
     }
-    cout << "follow done"<<endl;
+    cout << "follow done" << endl;
 }
 
+void parsing::initalizeTable() {
+    vector<string> lhs = inputHandler->getLHSinputs();
+    vector<string> terminals = inputHandler->getTerminals();
+    for (int i = 0; i <lhs.size(); ++i) {
+        vector<string>*tmp =new vector<string>();
+        lhsIndex[lhs.at(i)]=i;
+        for (int j = 0; j < terminals.size(); ++j) {
+            terminalIndex[terminals.at(j)]=j;
+            tmp->push_back("error");
+        }
+        parsingTable.push_back(*tmp);
+    }
+    terminalIndex["$"]=terminals.size();
+}
 
+void parsing::constractTable() {
+
+}

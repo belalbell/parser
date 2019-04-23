@@ -189,3 +189,6 @@ vector<string> InputHandler::getRHSByIndex(int index) {
     string lhs = LHSinputs.at(index);
     return leftToRight[lhs];
 }
+vector<string> InputHandler::getTerminals(){
+    return Terminals;
+}

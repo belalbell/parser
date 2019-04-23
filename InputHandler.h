@@ -33,6 +33,7 @@ public:
     void rightTokensSeparator(string rightHandSideToken);
     void print();
     vector<string> getLHSinputs();
+    vector<string> getTerminals();
     vector<string> getLeftToRight(string lhs);
     vector<string> getRightToTokens(string rhs);
     void setLHS(string leftHandSide);
