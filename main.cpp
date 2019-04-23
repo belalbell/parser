@@ -24,6 +24,19 @@ void print() {
     }
 }
 
+void removeCommaFromReadFile() {
+    vector<string> temp;
+    for (int i = 0; i < inputHandler->getLeftToRight().size(); ++i) {
+        temp = inputHandler->getRHSByIndex(i);
+        for (int j = 0; j < temp.size(); ++j) {
+            if (temp[j].at(0) == '\'' && temp[j].at(temp[j].size() - 1) == '\'') {
+                temp[j] = temp[j].substr(1, temp[j].size() - 2);
+            }
+        }
+        inputHandler->setLeftToRight(inputHandler->getLHS()[i], temp);
+    }
+}
+
 void insert() {
     inputHandler->setLHS("A");
 
@@ -40,10 +53,12 @@ void insert() {
 
 
 int main() {
-     InputHandler *nonFiniteAutomata = InputHandler::getInstance();
+    InputHandler *nonFiniteAutomata = InputHandler::getInstance();
     nonFiniteAutomata->readFile("E:\\3rd year 2nd semester\\compiler\\phaseTwo\\parser\\sara.txt");
     //nonFiniteAutomata->print();
-   // insert();
+    // insert();
+    //removeCommaFromReadFile();
+    cout << "print the current file :" << endl;
     print();
     cout << "left size = " << inputHandler->getLHSSize() << endl;
     cout << "right size = " << inputHandler->getRHSSize() << endl;
@@ -59,13 +74,21 @@ int main() {
             immediateLeftRecursion->eliminateImmediateLeftRecursion(lhsStr, rhsVector);
         }
     }
-
+    cout << endl;
+    cout << "Immediate left factoring : " << endl;
     print();
-    cout << "done" << endl;
+
+    cout << endl;
+    cout << "Not Immediate left factoring : " << endl;
     notImmediateLeftRecursion->eliminateNotImmediateLeftRecursion();
-    leftFactoring->perfomLeftFactoring();
-
     print();
+
+    cout << endl;
+    cout << "left factoring : " << endl;
+    leftFactoring->perfomLeftFactoring();
+    print();
+
+    cout << endl;
     cout << "done" << endl;
     return 0;
 }
