@@ -24,12 +24,15 @@ void InputHandler::readFile(string address) {
     string tmp ,nextLine;
 
     getline(in, tmp);
+    tmp.erase(std::remove(tmp.begin(), tmp.end(), '\''), tmp.end());
     while (getline(in, nextLine)) {
+        nextLine.erase(std::remove(nextLine.begin(), nextLine.end(), '\''), nextLine.end());
         while (true){
             if (nextLine.at(0) != '#'){
                 tmp.append(" ");
                 tmp.append(nextLine);
                 getline(in, nextLine);
+                nextLine.erase(std::remove(nextLine.begin(), nextLine.end(), '\''), nextLine.end());
             } else{
                 tmp.erase(0 ,2);
                 LeftRightInputs(tmp);
@@ -52,6 +55,9 @@ void InputHandler::LeftRightInputs(string line){
     line.erase(0, pos + delimiter.length() + 1);
     RHS = line ;
     rightInputsSeparator(RHS);
+//    for (int i = 0; i < RHS.size(); ++i) {
+//        RHSinputs.at(i).erase(std::remove(RHSinputs.at(i).begin(), RHSinputs.at(i).end(), '\''), RHSinputs.at(i).end());
+//    }
     leftToRight[LHS] = RHSinputs ;
 
 
