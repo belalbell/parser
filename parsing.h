@@ -23,14 +23,23 @@ private:
 public:
 
     static parsing* getInstance();
+<<<<<<< HEAD
     string** detParsingTable();
+=======
+>>>>>>> belal
     void first();
     void follow();
+    void initalizeTable();
+    void constractTable();
     int getTerminalIndex(string terminal);
     int getLhsIndex(string lhs);
     map<string,int> getterminalIndex();
     map<string,int> getlhsIndex();
     vector<vector<string>> getParsingTable();
+<<<<<<< HEAD
+=======
+    map<string,vector<string>> getFollowMap();
+>>>>>>> belal
 
 };
 

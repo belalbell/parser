@@ -19,29 +19,40 @@ InputHandler *InputHandler::getInstance() {
     }
     return insatnce;
 }
+
 void InputHandler::readFile(string address) {
     ifstream in(address);
-    string tmp ,nextLine;
+    string tmp, nextLine;
 
     getline(in, tmp);
     tmp.erase(std::remove(tmp.begin(), tmp.end(), '\''), tmp.end());
     while (getline(in, nextLine)) {
         nextLine.erase(std::remove(nextLine.begin(), nextLine.end(), '\''), nextLine.end());
+<<<<<<< HEAD
         while (true){
             if (nextLine.at(0) != '#'){
+=======
+        while (true) {
+            if (nextLine.at(0) != '#') {
+>>>>>>> belal
                 tmp.append(" ");
                 tmp.append(nextLine);
                 getline(in, nextLine);
                 nextLine.erase(std::remove(nextLine.begin(), nextLine.end(), '\''), nextLine.end());
+<<<<<<< HEAD
             } else{
                 tmp.erase(0 ,2);
+=======
+            } else {
+                tmp.erase(0, 2);
+>>>>>>> belal
                 LeftRightInputs(tmp);
                 tmp = nextLine;
                 break;
             }
         }
     }
-    tmp.erase(0 ,2);
+    tmp.erase(0, 2);
     LeftRightInputs(tmp);
     rhsSize = LHSinputs.size();
 }
@@ -58,7 +69,11 @@ void InputHandler::LeftRightInputs(string line){
 //    for (int i = 0; i < RHS.size(); ++i) {
 //        RHSinputs.at(i).erase(std::remove(RHSinputs.at(i).begin(), RHSinputs.at(i).end(), '\''), RHSinputs.at(i).end());
 //    }
+<<<<<<< HEAD
     leftToRight[LHS] = RHSinputs ;
+=======
+    leftToRight[LHS] = RHSinputs;
+>>>>>>> belal
 
 
 }
@@ -79,17 +94,19 @@ void InputHandler::rightInputsSeparator(string rightHandSide){
 void InputHandler::rightTokensSeparator(string rightHandSideToken){
     size_t pos = 0;
     string delimiter = " ";
-    string token ,tmp = rightHandSideToken;
+    string token, tmp = rightHandSideToken;
     RHStokens.clear();
     while ((pos = tmp.find(delimiter)) != std::string::npos) {
         token = tmp.substr(0, pos);
         token.erase(std::remove(token.begin(), token.end(), '\''), token.end());
-        RHStokens.insert(RHStokens.end(),token);
+        checkIfTerminal(token);
+        RHStokens.insert(RHStokens.end(), token);
         tmp.erase(0, pos + delimiter.length());
     }
     tmp.erase(std::remove(tmp.begin(), tmp.end(), '\''), tmp.end());
-    RHStokens.insert(RHStokens.end(),tmp);
-    rightToTokens[rightHandSideToken] = RHStokens ;
+    checkIfTerminal(tmp);
+    RHStokens.insert(RHStokens.end(), tmp);
+    rightToTokens[rightHandSideToken] = RHStokens;
 }
 
 
@@ -124,6 +141,18 @@ map<string,vector<string>> InputHandler::getRightToTokens(){
 }
 void InputHandler::deleteFromRightToTokens(string RightHandSide){
     rightToTokens.erase(RightHandSide);
+}
+
+void InputHandler::checkIfTerminal(string token){
+    if (!token.empty()){
+        if (!isupper(token.at(0))){
+            if(std::find(Terminals.begin(), Terminals.end(), token) != Terminals.end()) {
+                return;
+            } else {
+                Terminals.insert(Terminals.end() ,token);
+            }
+        }
+    }
 }
 
 void InputHandler::print(){
@@ -162,6 +191,9 @@ void InputHandler::print(){
         cout << "\n";
     }
 */
+    for (auto it = Terminals.begin(); it != Terminals.end(); ++it){
+        cout << *it << "\n";
+    }
 }
 
 vector<string> InputHandler::getLHSinputs() {
@@ -188,4 +220,12 @@ string InputHandler::getLHSByIndex(int index) {
 vector<string> InputHandler::getRHSByIndex(int index) {
     string lhs = LHSinputs.at(index);
     return leftToRight[lhs];
+}
+
+string InputHandler::getStartingState(){
+    return LHSinputs.at(0);
+}
+
+vector<string> InputHandler::getTerminals() {
+    return Terminals;
 }
