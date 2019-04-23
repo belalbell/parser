@@ -16,6 +16,20 @@ E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
 SymbolsNames.h
 E:/3rd year 2nd semester/compiler/phaseTwo/parser/SymbolsNames.h
 
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.cpp
+InputHandler.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
+fstream
+-
+iostream
+-
+sstream
+-
+bits/stdc++.h
+-
+map
+-
+
 E:/3rd year 2nd semester/compiler/phaseTwo/parser/InputHandler.h
 fstream
 -
@@ -76,6 +90,16 @@ iostream
 sstream
 -
 bits/stdc++.h
+-
+map
+-
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/parsing.cpp
+parsing.h
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/parsing.h
+
+E:/3rd year 2nd semester/compiler/phaseTwo/parser/parsing.h
+string
 -
 map
 -
