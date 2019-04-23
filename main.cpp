@@ -54,7 +54,7 @@ void insert() {
 
 int main() {
     InputHandler *nonFiniteAutomata = InputHandler::getInstance();
-    nonFiniteAutomata->readFile("E:\\3rd year 2nd semester\\compiler\\phaseTwo\\parser\\sara.txt");
+    nonFiniteAutomata->readFile("/home/belal/Downloads/Parser/Parser.txt");
     //nonFiniteAutomata->print();
     // insert();
     //removeCommaFromReadFile();
