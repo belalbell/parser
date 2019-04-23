@@ -26,7 +26,7 @@ vector<string> LeftFactoring::createLeftFactoredGrammar(vector<string> comparedG
             originalGrammar.push_back(currentGrammar[nodeIndex]);
         } else if (currentGrammar[nodeIndex].find(currentToken) != string::npos ||
                    currentGrammar[nodeIndex].find(currentToken) == 0) {
-            temp = currentGrammar[nodeIndex].substr(letterTokenIndex + 1);
+            temp = currentGrammar[nodeIndex].substr(letterTokenIndex);
             if (temp.size() == 0) {
                 temp = "\\L";
             }
