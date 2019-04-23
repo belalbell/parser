@@ -13,5 +13,6 @@ int main() {
     nonFiniteAutomata->print();
     parsing* parsing = parsing::getInstance();
     parsing->first();
+    parsing->follow();
     return 0;
 }

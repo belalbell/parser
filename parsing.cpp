@@ -41,7 +41,7 @@ void parsing::first() {
         }
         firstMap[lhs] = *tmp;
     }
-    cout << "first lhs done ";
+    cout << "first lhs done "<<endl;
     for (int l = 0; l < lhsSize; ++l) {
         vector<string> rhs = inputHandler->getRHSByIndex(l);
         for (int i = 0; i < rhs.size(); ++i) {
@@ -51,21 +51,76 @@ void parsing::first() {
             vector<string> token = inputHandler->getRightToTokens(rhs.at(i));
             if (!(token.at(0)[0] >= 'A' && token.at(0)[0] <= 'Z')) {
                 tmp->push_back(token.at(0));
-                firstMap[rhsElement]=*tmp;
-            } else{
+                firstMap[rhsElement] = *tmp;
+            } else {
                 vector<string> takeFirst = firstMap[token.at(0)];
                 for (int j = 0; j < takeFirst.size(); ++j) {
                     tmp->push_back(takeFirst.at(j));
                 }
             }
-            firstMap[rhsElement]=*tmp;
+            firstMap[rhsElement] = *tmp;
         }
     }
-    cout << "first lhs done ";
+    cout << "first lhs done "<<endl;
 }
 
 void parsing::follow() {
-
+    int lhsSize = inputHandler->getLHSSize();
+    for (int i = 0; i < lhsSize; ++i) {
+        string lhs = inputHandler->getLHSByIndex(i);
+        vector<string> *tmp = new vector<string>();
+        if (i == 0) {
+            tmp->push_back("$");
+        }
+        lhs.erase(remove_if(lhs.begin(), lhs.end(), ::isspace), lhs.end());
+        for (int j = 0; j < lhsSize; ++j) {
+            vector<string> rhs = inputHandler->getRHSByIndex(j);
+            for (int k = 0; k < rhs.size(); ++k) {
+                vector<string> token = inputHandler->getRightToTokens(rhs.at(k));
+                for (int l = 0; l < token.size(); ++l) {
+                    string element = token.at(l);
+                    element.erase(remove_if(element.begin(), element.end(), ::isspace), element.end());
+                    if (lhs == element) {
+                        if (l == token.size() - 1) {
+                            string str = inputHandler->getLHSByIndex(j);
+                            str.erase(remove_if(str.begin(), str.end(), ::isspace), str.end());
+                            vector<string> clone = followMap[str];
+                            for (int m = 0; m < clone.size(); ++m) {
+                                tmp->push_back(clone.at(m));
+                            }
+                        } else if (token.at(l + 1) != " ") {
+                            if (token.at(l + 1)[0] >= 'A' && token.at(l + 1)[0] <= 'Z') {
+                                string str = token.at(l+1);
+                                str.erase(remove_if(str.begin(), str.end(), ::isspace), str.end());
+                                vector<string> clone = firstMap[str];
+                                for (int m = 0; m < clone.size(); ++m) {
+                                    if (clone.at(m) == "\\L") {
+                                        vector<string> clonetmp = followMap[str];
+                                        for (int n = 0; n < clonetmp.size(); ++n) {
+                                            tmp->push_back(clonetmp.at(n));
+                                        }
+                                    } else {
+                                        tmp->push_back(clone.at(m));
+                                    }
+                                }
+                            } else if (token.at(l + 1) == "") {
+                                string str = inputHandler->getLHSByIndex(j);
+                                str.erase(remove_if(str.begin(), str.end(), ::isspace), str.end());
+                                vector<string> clone = followMap[str];
+                                for (int m = 0; m < clone.size(); ++m) {
+                                    tmp->push_back(clone.at(m));
+                                }
+                            } else {
+                                tmp->push_back(token.at(l + 1));
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        followMap[lhs] = *tmp;
+    }
+    cout << "follow done"<<endl;
 }
 
 
