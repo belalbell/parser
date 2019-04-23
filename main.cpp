@@ -29,21 +29,21 @@ void insert() {
 
     vector<string> rhsVector;
 
-    rhsVector.push_back("ad");
-    rhsVector.push_back("a");
-    rhsVector.push_back("ab");
-    rhsVector.push_back("abc");
-    rhsVector.push_back("b");
+    rhsVector.push_back("abB");
+    rhsVector.push_back("aB");
+    rhsVector.push_back("cdg");
+    rhsVector.push_back("cdeB");
+    rhsVector.push_back("cdfB");
 
     inputHandler->setLeftToRight("A", rhsVector);
 }
 
 
 int main() {
-    // InputHandler *nonFiniteAutomata = InputHandler::getInstance();
-    //nonFiniteAutomata->readFile("E:\\3rd year 2nd semester\\compiler\\phaseTwo\\parser\\sara.txt");
+     InputHandler *nonFiniteAutomata = InputHandler::getInstance();
+    nonFiniteAutomata->readFile("E:\\3rd year 2nd semester\\compiler\\phaseTwo\\parser\\sara.txt");
     //nonFiniteAutomata->print();
-    insert();
+   // insert();
     print();
     cout << "left size = " << inputHandler->getLHSSize() << endl;
     cout << "right size = " << inputHandler->getRHSSize() << endl;
