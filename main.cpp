@@ -29,11 +29,11 @@ void insert() {
 
     vector<string> rhsVector;
 
-    rhsVector.push_back("abB");
-    rhsVector.push_back("aB");
-    rhsVector.push_back("cdg");
-    rhsVector.push_back("cdeB");
-    rhsVector.push_back("cdfB");
+    rhsVector.push_back("ad");
+    rhsVector.push_back("a");
+    rhsVector.push_back("ab");
+    rhsVector.push_back("abc");
+    rhsVector.push_back("b");
 
     inputHandler->setLeftToRight("A", rhsVector);
 }
