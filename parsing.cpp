@@ -26,7 +26,9 @@ void parsing::first() {
         vector<string> *tmp = new vector<string>();
         for (int j = 0; j < rhs.size(); ++j) {
             vector<string> token = inputHandler->getRightToTokens(rhs.at(j));
-            if (!(token.at(0)[0] >= 'A' && token.at(0)[0] <= 'Z')) {
+            if (rhs.at(j) == "\\L") {
+                tmp->push_back("\\L");
+            } else if (!(token.at(0)[0] >= 'A' && token.at(0)[0] <= 'Z')) {
                 tmp->push_back(token.at(0));
             } else {
                 string tmpStr = token.at(0);
@@ -68,18 +70,22 @@ void parsing::follow() {
     int lhsSize = inputHandler->getLHSSize();
     for (int i = 0; i < lhsSize; ++i) {
         string lhs = inputHandler->getLHSByIndex(i);
+        lhs.erase(remove_if(lhs.begin(), lhs.end(), ::isspace), lhs.end());
         vector<string> *tmp = new vector<string>();
         if (i == 0) {
             tmp->push_back("$");
         }
-        lhs.erase(remove_if(lhs.begin(), lhs.end(), ::isspace), lhs.end());
         for (int j = 0; j < lhsSize; ++j) {
+            if (lhs == "TERM'" && j==10)
+                cout << "hhhhhhhhhhhhhh";
             vector<string> rhs = inputHandler->getRHSByIndex(j);
             for (int k = 0; k < rhs.size(); ++k) {
                 vector<string> token = inputHandler->getRightToTokens(rhs.at(k));
                 for (int l = 0; l < token.size(); ++l) {
                     string element = token.at(l);
                     element.erase(remove_if(element.begin(), element.end(), ::isspace), element.end());
+                    if (element=="")
+                        continue;
                     if (lhs == element) {
                         if (l == token.size() - 1) {
                             string str = inputHandler->getLHSByIndex(j);
@@ -129,7 +135,9 @@ void parsing::initalizeTable() {
     bool flag = true;
     for (int i = 0; i < lhs.size(); ++i) {
         vector<string> *tmp = new vector<string>();
-        lhsIndex[lhs.at(i)] = i;
+        string str = lhs.at(i);
+        str.erase(remove_if(str.begin(), str.end(), ::isspace), str.end());
+        lhsIndex[str] = i;
         for (int j = 0; j <= terminals.size(); ++j) {
             if (flag && j < terminals.size()) {
                 terminalIndex[terminals.at(j)] = j;
@@ -161,7 +169,7 @@ void parsing::constractTable() {
                     for (int l = 0; l < follow.size(); ++l) {
                         int row = i;
                         int col = terminalIndex[follow.at(l)];
-                        parsingTable.at(row).at(col) = rhs.at(j);
+                        parsingTable.at(row).at(col) = "\\L";
                     }
                 } else {
                     int row = i;

@@ -38,83 +38,85 @@ void tableTracer::readSymbolTable(string address) {
 void tableTracer::initializeInputStack(){
     inputSymbols.push("$");
     for (auto it = reversedSymbols.rbegin(); it != reversedSymbols.rend(); ++it){
-       inputSymbols.push(*it);
+        inputSymbols.push(*it);
     }
     TokensStack.push("$");
-    //string starting = nonFiniteAutomata->getStartingState();
-    //TokensStack.push(starting);
+    string starting = nonFiniteAutomata->getStartingState();
+    TokensStack.push(starting);
 
-    /*lhsIndex = parsingTabel->getlhsIndex();
+    lhsIndex = parsingTabel->getlhsIndex();
     terminalIndex = parsingTabel->getterminalIndex();
     parsingTable = parsingTabel->getParsingTable();
     followMap = parsingTabel->getFollowMap();
-*/
+
 }
 
 void tableTracer::trace(){
-string currentInput ,topOfStack ,action;
-while (!inputSymbols.empty()){
-    currentInput = inputSymbols.top();
-    topOfStack = TokensStack.top();
-    if (currentInput == topOfStack){
-        inputSymbols.pop();
-        TokensStack.pop();
-        printMatch(currentInput);
-    } else{
-        action = getEelementFromTable(topOfStack ,currentInput);
-        if (action != "error"){
-            firstError = false ;
-            if (action == "\L"){
-                TokensStack.pop();
-                printLamda();
-            } else{
-                TokensStack.pop();
-                rightTokensSeparator(action);
-                pushToStack(RHStokens);
-                printAction(action);
-            }
+    string currentInput ,topOfStack ,action;
+    while (!inputSymbols.empty()){
+        printStacks();
+        currentInput = inputSymbols.top();
+        topOfStack = TokensStack.top();
+        if (currentInput == topOfStack){
+            inputSymbols.pop();
+            TokensStack.pop();
+            printMatch(currentInput);
         } else{
-            follow.clear();
-            bool found = false ;
-            if (isupper(topOfStack.at(0))){
-                follow = followMap.at(topOfStack);
-                for (auto it = follow.begin(); it != follow.end(); ++it){
-                    if (*it == currentInput){
-                        found = true ;
-                        TokensStack.pop();
-                        firstError = false ;
-                        printSynch(topOfStack);
-                        break;
-                    }
-                }
-                if (!found){
-                    //error
-                    if (firstError){
-                        inputSymbols.pop();
-                        printStacks();
-                    } else{
-                        inputSymbols.pop();
-                        firstError = true ;
-                        printError(currentInput);
-                    }
+            action = getEelementFromTable(topOfStack ,currentInput);
+            if (action != "error"){
+                firstError = false ;
+                if (action == "\L"){
+                    TokensStack.pop();
+                    printLamda();
+                } else{
+                    TokensStack.pop();
+                    rightTokensSeparator(action);
+                    pushToStack(RHStokens);
+                    printAction(action);
                 }
             } else{
-                TokensStack.pop();
-                printStacks();
-                printError(topOfStack);
-                if (firstError){
+                follow.clear();
+                bool found = false ;
+                if (isupper(topOfStack.at(0))){
+                    follow = followMap.at(topOfStack);
+                    for (auto it = follow.begin(); it != follow.end(); ++it){
+                        if (*it == currentInput){
+                            found = true ;
+                            TokensStack.pop();
+                            firstError = false ;
+                            printSynch(topOfStack);
+                            break;
+                        }
+                    }
+                    if (!found){
+                        //error
+                        if (firstError){
+                            inputSymbols.pop();
+
+                        } else{
+                            inputSymbols.pop();
+                            firstError = true ;
+                            printError(currentInput);
+                        }
+                    }
                 } else{
-                    firstError = true ;
+                    TokensStack.pop();
+
+                    printError(topOfStack);
+                    if (firstError){
+                    } else{
+                        firstError = true ;
+                    }
                 }
             }
-        }
 
+        }
     }
-}
 }
 
 string tableTracer::getEelementFromTable(string leftHandSide ,string input){
-    int x ,y ;
+    int x = 0;
+    int y = 0 ;
     string action;
     x = lhsIndex.at(leftHandSide);
     y = terminalIndex.at(input);
@@ -165,7 +167,6 @@ void tableTracer::printStacks(){
     file.close();
 }
 void tableTracer::printMatch(string match){
-    printStacks();
     file.open("output.txt", std::ios_base::app);
     std::cout << "match("<< match << ")"<< std::endl;
     file<<"- Action: "<< "match("<< match << ")"<< std::endl;
@@ -174,7 +175,6 @@ void tableTracer::printMatch(string match){
 }
 
 void tableTracer::printLamda(){
-    printStacks();
     file.open("output.txt", std::ios_base::app);
     std::cout << "\L"<<std::endl;
     file<<"- Action: " << "\L"<<std::endl;
@@ -183,7 +183,6 @@ void tableTracer::printLamda(){
     file.close();
 }
 void tableTracer::printAction(string action){
-    printStacks();
     file.open("output.txt", std::ios_base::app);
     std::cout << action << std::endl;
     file<<"- Action: " <<  action <<std::endl;
@@ -191,7 +190,6 @@ void tableTracer::printAction(string action){
     file.close();
 }
 void tableTracer::printSynch(string token){
-    printStacks();
     file.open("output.txt", std::ios_base::app);
     std::cout << "Synch at ("<< token << ")"<< std::endl;
     file<<"- Action: " << "Synch at ("<< token << ")" << std::endl;
@@ -199,11 +197,9 @@ void tableTracer::printSynch(string token){
     file.close();
 }
 void tableTracer::printError(string token){
-    printStacks();
     file.open("output.txt", std::ios_base::app);
     std::cout << "Error at ("<< token << ")"<< std::endl;
     file<<"- Action: " << "Error at ("<< token << ")" << std::endl;
     file <<"\n\n";
     file.close();
 }
-
