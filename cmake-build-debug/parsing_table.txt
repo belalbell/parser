@@ -1,7 +1,19 @@
-	term	term	term	term	term
+	id	;	int	float	if	(	)	{	}	else	while	=	relop	addop	mulop	num	+	-
 
-lhs	val	val	val	val	val	
-lhs	val	val	val	val	val	
-lhs	val	val	val	val	val	
-lhs	val	val	val	val	val	
-lhs	val	val	val	val	val	
+METHOD_BODY	STATEMENT_LIST	error	STATEMENT_LIST	STATEMENT_LIST	STATEMENT_LIST	error	error	error	error	error	STATEMENT_LIST	error	error	error	error	error	error	error	error	
+STATEMENT_LIST	STATEMENT  STATEMENT_LIST'	error	STATEMENT  STATEMENT_LIST'	STATEMENT  STATEMENT_LIST'	STATEMENT  STATEMENT_LIST'	error	error	error	error	error	STATEMENT  STATEMENT_LIST'	error	error	error	error	error	error	error	error	
+STATEMENT	ASSIGNMENT	error	DECLARATION 	DECLARATION 	IF 	error	error	error	error	error	WHILE 	error	error	error	error	error	error	error	error	
+DECLARATION	error	error	PRIMITIVE_TYPE id ;	PRIMITIVE_TYPE id ;	error	error	error	error	error	error	error	error	error	error	error	error	error	error	error	
+PRIMITIVE_TYPE	error	error	int 	float	error	error	error	error	error	error	error	error	error	error	error	error	error	error	error	
+IF	error	error	error	error	if ( EXPRESSION ) { STATEMENT } else { STATEMENT }	error	error	error	error	error	error	error	error	error	error	error	error	error	error	
+WHILE	error	error	error	error	error	error	error	error	error	error	while ( EXPRESSION ) { STATEMENT }	error	error	error	error	error	error	error	error	
+ASSIGNMENT	id = EXPRESSION ;	error	error	error	error	error	error	error	error	error	error	error	error	error	error	error	error	error	error	
+EXPRESSION	SIMPLE_EXPRESSION  EXPRESSION'	error	error	error	error	SIMPLE_EXPRESSION  EXPRESSION'	error	error	error	error	error	error	error	error	error	SIMPLE_EXPRESSION  EXPRESSION'	SIMPLE_EXPRESSION  EXPRESSION'	SIMPLE_EXPRESSION  EXPRESSION'	error	
+SIMPLE_EXPRESSION	TERM  SIMPLE_EXPRESSION'	error	error	error	error	TERM  SIMPLE_EXPRESSION'	error	error	error	error	error	error	error	error	error	TERM  SIMPLE_EXPRESSION'	SIGN TERM  SIMPLE_EXPRESSION'	SIGN TERM  SIMPLE_EXPRESSION'	error	
+TERM	FACTOR  TERM'	error	error	error	error	FACTOR  TERM'	error	error	error	error	error	error	error	error	error	FACTOR  TERM'	error	error	error	
+FACTOR	id 	error	error	error	error	( EXPRESSION )	error	error	error	error	error	error	error	error	error	num 	error	error	error	
+SIGN	error	error	error	error	error	error	error	error	error	error	error	error	error	error	error	error	+ 	-	error	
+STATEMENT_LIST'	 STATEMENT STATEMENT_LIST'	error	 STATEMENT STATEMENT_LIST'	 STATEMENT STATEMENT_LIST'	 STATEMENT STATEMENT_LIST'	error	error	error	error	error	 STATEMENT STATEMENT_LIST'	error	error	error	error	error	error	error	\L	
+SIMPLE_EXPRESSION'	error	\L	error	error	error	error	\L	error	error	error	error	error	\L	 addop TERM SIMPLE_EXPRESSION'	error	error	error	error	error	
+TERM'	error	\L	error	error	error	error	\L	error	error	error	error	error	\L	\L	 mulop FACTOR TERM'	error	error	error	error	
+EXPRESSION'	error	\L	error	error	error	error	\L	error	error	error	error	error	relop SIMPLE_EXPRESSION	error	error	error	error	error	error	

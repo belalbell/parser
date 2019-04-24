@@ -11,6 +11,7 @@
 #include <map>
 #include "parsing.h"
 #include "tableTracer.h"
+#include "Save_Load.h"
 
 InputHandler *inputHandler = InputHandler::getInstance();
 parsing *parsing = parsing::getInstance();
@@ -109,6 +110,8 @@ int main() {
     parsing->initalizeTable();
     parsing->constractTable();
     cout << "belal done" << endl;
+    Save_Load *saveLoad= Save_Load::getInstance();
+    saveLoad->save(inputHandler->getTerminals(),inputHandler->getLHSinputs(),parsing->getParsingTable());
     //////////////////////////////////////////////////////////
     tracer->readSymbolTable("/home/belal/Downloads/Parser/symbol_table.txt");
     tracer->trace();

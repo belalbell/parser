@@ -19,13 +19,17 @@ private:
     map<string,vector<string>> firstMap;
     map<string,vector<string>> followMap;
     vector<vector<string>> parsingTable;
+    vector<string> remainingFollow;
+    vector<string> cloneFollow;
 
 public:
 
     static parsing* getInstance();
 
     void first();
+    void firstFirst(string lhs);
     void follow();
+    void followFollow(string lhs);
     void initalizeTable();
     void constractTable();
     int getTerminalIndex(string terminal);

@@ -20,6 +20,10 @@ CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.o: ../NotImmediateLeftRecurs
 CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.o: ../NotImmediateLeftRecursion.h
 CMakeFiles/Parser.dir/NotImmediateLeftRecursion.cpp.o: ../SymbolsNames.h
 
+CMakeFiles/Parser.dir/Save_Load.cpp.o: ../InputHandler.h
+CMakeFiles/Parser.dir/Save_Load.cpp.o: ../Save_Load.cpp
+CMakeFiles/Parser.dir/Save_Load.cpp.o: ../Save_Load.h
+
 CMakeFiles/Parser.dir/SymbolsNames.cpp.o: ../InputHandler.h
 CMakeFiles/Parser.dir/SymbolsNames.cpp.o: ../SymbolsNames.cpp
 CMakeFiles/Parser.dir/SymbolsNames.cpp.o: ../SymbolsNames.h
@@ -28,6 +32,7 @@ CMakeFiles/Parser.dir/main.cpp.o: ../ImmediateLeftRecursion.h
 CMakeFiles/Parser.dir/main.cpp.o: ../InputHandler.h
 CMakeFiles/Parser.dir/main.cpp.o: ../LeftFactoring.h
 CMakeFiles/Parser.dir/main.cpp.o: ../NotImmediateLeftRecursion.h
+CMakeFiles/Parser.dir/main.cpp.o: ../Save_Load.h
 CMakeFiles/Parser.dir/main.cpp.o: ../SymbolsNames.h
 CMakeFiles/Parser.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Parser.dir/main.cpp.o: ../parsing.h

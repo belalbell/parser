@@ -65,7 +65,7 @@ void tableTracer::trace(){
             action = getEelementFromTable(topOfStack ,currentInput);
             if (action != "error"){
                 firstError = false ;
-                if (action == "\L"){
+                if (action == "\\L"){
                     TokensStack.pop();
                     printLamda();
                 } else{
@@ -131,10 +131,12 @@ void tableTracer::rightTokensSeparator(string rightHandSideToken){
     RHStokens.clear();
     while ((pos = tmp.find(delimiter)) != std::string::npos) {
         token = tmp.substr(0, pos);
-        RHStokens.insert(RHStokens.end(),token);
+        if (!token.empty())
+            RHStokens.insert(RHStokens.end(),token);
         tmp.erase(0, pos + delimiter.length());
     }
-    RHStokens.insert(RHStokens.end(),tmp);
+    if (!tmp.empty())
+        RHStokens.insert(RHStokens.end(),tmp);
 }
 
 void tableTracer::pushToStack(vector<string> tokens) {
@@ -176,8 +178,8 @@ void tableTracer::printMatch(string match){
 
 void tableTracer::printLamda(){
     file.open("output.txt", std::ios_base::app);
-    std::cout << "\L"<<std::endl;
-    file<<"- Action: " << "\L"<<std::endl;
+    std::cout << "\\L"<<std::endl;
+    file<<"- Action: " << "\\L"<<std::endl;
     file <<"\n\n";
 
     file.close();

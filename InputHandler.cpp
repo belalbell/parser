@@ -92,9 +92,10 @@ void InputHandler::rightTokensSeparator(string rightHandSideToken) {
         tmp.erase(0, pos + delimiter.length());
     }
     //tmp.erase(std::remove(tmp.begin(), tmp.end(), '\''), tmp.end());
-    if (!tmp.empty())
+    if (!tmp.empty()){
         checkIfTerminal(tmp);
-    RHStokens.insert(RHStokens.end(), tmp);
+        RHStokens.insert(RHStokens.end(), tmp);
+    }
     rightToTokens[rightHandSideToken] = RHStokens;
 }
 
